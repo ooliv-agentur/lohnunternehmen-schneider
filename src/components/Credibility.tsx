@@ -15,10 +15,10 @@ const Credibility: React.FC = () => {
         
         <div className="grid lg:grid-cols-3 gap-16 mb-16">
           <div className="text-center group">
-            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300 h-80 flex flex-col">
               <BadgeCheck className="h-16 w-16 text-green-600 mx-auto mb-8" />
               <h3 className="text-2xl font-bold mb-6 text-gray-900">20+ Jahre Erfahrung</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg leading-relaxed flex-1">
                 Seit 2004 als Familienbetrieb etabliert. Zwischen Köln und Frankfurt verwurzelt, 
                 deutschlandweit im Einsatz.
               </p>
@@ -26,10 +26,10 @@ const Credibility: React.FC = () => {
           </div>
           
           <div className="text-center group">
-            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300 h-80 flex flex-col">
               <Shield className="h-16 w-16 text-green-600 mx-auto mb-8" />
               <h3 className="text-2xl font-bold mb-6 text-gray-900">Zertifizierte Fachkräfte</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg leading-relaxed flex-1">
                 European Tree Workers und Spezialisten nach höchsten Sicherheitsstandards. 
                 Dort arbeiten, wo andere nicht können.
               </p>
@@ -37,10 +37,10 @@ const Credibility: React.FC = () => {
           </div>
           
           <div className="text-center group">
-            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300 h-80 flex flex-col">
               <Tractor className="h-16 w-16 text-green-600 mx-auto mb-8" />
               <h3 className="text-2xl font-bold mb-6 text-gray-900">Eigener Maschinenpark</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg leading-relaxed flex-1">
                 Umfangreiche, moderne Ausstattung für effiziente Projektumsetzung. 
                 Keine Wartezeiten, keine Kompromisse.
               </p>
