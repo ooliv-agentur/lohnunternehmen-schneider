@@ -12,32 +12,28 @@ const Hero: React.FC = () => {
 
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6 pt-20">
         <div className="inline-block px-6 py-3 bg-green-600 text-white rounded-full text-sm font-semibold mb-10 shadow-lg">
-          Seit über 20 Jahren im Westerwald zwischen Köln und Frankfurt
+          Im Einsatz für Natur, Landschaft & Sicherheit
         </div>
         
         <h1 className="text-5xl md:text-8xl font-bold mb-10 leading-tight text-gray-900 tracking-tight">
-          Wir wissen, wie man
-          <span className="block text-green-700">20 Meter hohe Fichten</span>
-          <span className="block text-gray-900">sicher fällt.</span>
+          Professionelle
+          <span className="block text-green-700">Baumarbeiten &</span>
+          <span className="block text-gray-900">Spezialtechnik</span>
+          <span className="block text-2xl md:text-4xl font-light text-gray-600 mt-6">aus dem Westerwald</span>
         </h1>
-        
-        <p className="text-2xl md:text-3xl mb-10 text-gray-700 max-w-4xl mx-auto font-light leading-relaxed">
-          Und warum Blühstreifen Arten retten. Professionelle Baumarbeiten & Spezialtechnik aus dem Westerwald.
-        </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
           <Button 
             size="lg" 
             className="bg-green-700 hover:bg-green-800 text-white text-xl px-12 py-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
           >
-            Anfrage starten – ohne Schnickschnack
+            Jetzt unverbindlich Angebot anfordern
           </Button>
           <div className="text-green-700 font-medium bg-green-50 px-6 py-3 rounded-full border border-green-200">
             Kostenlose Erstberatung & Besichtigung
           </div>
         </div>
 
-        {/* Enhanced Image Placeholder */}
         <div className="relative max-w-5xl mx-auto">
           <div className="bg-gradient-to-br from-green-100 via-white to-green-50 rounded-3xl h-96 flex items-center justify-center border-2 border-green-200 shadow-2xl overflow-hidden">
             <div className="text-center">
@@ -47,7 +43,7 @@ const Hero: React.FC = () => {
                 <Shield className="h-20 w-20 text-green-700" />
               </div>
               <span className="text-green-700 text-2xl font-bold block mb-2">Waldarbeiten & Maschinen im Einsatz</span>
-              <div className="text-green-600 font-medium">Authentische Bilder folgen – hier wird Ihr Maschinenpark präsentiert</div>
+              <div className="text-green-600 font-medium">Hier folgt später eine Bildbühne mit realem Material</div>
             </div>
           </div>
         </div>

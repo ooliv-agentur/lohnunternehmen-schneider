@@ -12,8 +12,8 @@ const About: React.FC = () => {
             <span className="block text-green-700">Landwirte und Forstämter</span>
           </h2>
           <p className="text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Über 20 Jahre Erfahrung treffen auf modernste Technik und zertifizierte Fachkräfte – 
-            das macht den Unterschied.
+            Seit 2004 – im Einsatz für Sicherheit & Nachhaltigkeit. 
+            Modernste Technik und zertifizierte Fachkräfte machen den Unterschied.
           </p>
         </div>
         
@@ -44,7 +44,7 @@ const About: React.FC = () => {
             <div className="bg-gradient-to-br from-green-100 to-green-200 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
               <Wrench className="h-10 w-10 text-green-800" />
             </div>
-            <h3 className="text-2xl font-bold mb-6 text-gray-900">Eigener Maschinenpark</h3>
+            <h3 className="text-2xl font-bold mb-6 text-gray-900">Spezialtechnik ohne Wartezeit</h3>
             <p className="text-gray-700 text-lg leading-relaxed">
               Umfangreiche, moderne Ausstattung für effiziente Projektumsetzung. 
               Keine Wartezeiten, keine Kompromisse.
@@ -52,7 +52,6 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Enhanced Team Image Placeholder */}
         <div className="relative max-w-5xl mx-auto">
           <div className="bg-gradient-to-br from-green-50 via-white to-green-100 rounded-3xl h-96 flex items-center justify-center border-2 border-green-200 shadow-2xl overflow-hidden">
             <div className="text-center">

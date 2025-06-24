@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TreePine, Shield, Tractor, Leaf, Wrench } from 'lucide-react';
+import { TreePine, Shield, Tractor, Leaf } from 'lucide-react';
 
 const Services: React.FC = () => {
   return (
@@ -14,13 +14,11 @@ const Services: React.FC = () => {
             Fünf Leistungsbereiche
           </h2>
           <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Jeder Bereich erhält eine eigene Unterseite mit detaillierten Informationen, 
-            Referenzen und direkten Kontaktmöglichkeiten.
+            Jeder Bereich mit detaillierten Informationen, Referenzen und direkten Kontaktmöglichkeiten.
           </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-10 mb-20">
-          {/* Baumarbeiten - Featured */}
           <div className="lg:col-span-2 bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-10 border-2 border-green-200 shadow-lg">
             <div className="flex items-start space-x-8">
               <div className="bg-green-600 p-6 rounded-2xl shadow-lg">
@@ -35,13 +33,11 @@ const Services: React.FC = () => {
                 </p>
                 <div className="flex items-center text-green-700 font-bold text-lg">
                   <span>→ Zur Detailseite</span>
-                  <span className="ml-4 text-sm bg-green-200 text-green-800 px-4 py-2 rounded-full">Konzept in Arbeit</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* EPS-Bekämpfung */}
           <div className="bg-white rounded-3xl p-8 border-2 border-gray-200 hover:border-green-300 transition-all duration-300 hover:shadow-lg">
             <div className="flex items-start space-x-6">
               <div className="bg-gray-100 p-4 rounded-2xl">
@@ -60,7 +56,6 @@ const Services: React.FC = () => {
             </div>
           </div>
 
-          {/* Forstdienstleistungen */}
           <div className="bg-white rounded-3xl p-8 border-2 border-gray-200 hover:border-green-300 transition-all duration-300 hover:shadow-lg">
             <div className="flex items-start space-x-6">
               <div className="bg-gray-100 p-4 rounded-2xl">
@@ -80,7 +75,6 @@ const Services: React.FC = () => {
           </div>
         </div>
 
-        {/* Additional Services */}
         <div className="grid md:grid-cols-2 gap-10">
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 border border-gray-200">
             <div className="flex items-center space-x-4 mb-6">

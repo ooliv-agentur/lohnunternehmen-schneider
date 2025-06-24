@@ -19,11 +19,10 @@ const Reviews: React.FC = () => {
             Das sagen unsere Kunden
           </h2>
           <p className="text-xl text-gray-700">
-            Echte Bewertungen aus Google My Business
+            Echte Rezensionen aus Google – direkt, ehrlich, unbeeinflusst.
           </p>
         </div>
         
-        {/* Featured Review */}
         <div className="bg-white rounded-3xl p-12 mb-12 border-2 border-green-200 shadow-xl">
           <div className="flex justify-center mb-8">
             {[...Array(5)].map((_, i) => (
@@ -39,7 +38,6 @@ const Reviews: React.FC = () => {
           </div>
         </div>
 
-        {/* Additional Reviews */}
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white rounded-2xl p-8 border border-green-200 shadow-lg">
             <div className="flex justify-center mb-6">
@@ -48,7 +46,6 @@ const Reviews: React.FC = () => {
               ))}
               <span className="text-gray-300 text-2xl">★</span>
             </div>
-            <p className="text-gray-600 mb-6 text-center text-4xl">🚜</p>
             <div className="text-center">
               <p className="font-bold text-gray-900 text-xl">Chris</p>
               <p className="text-gray-500">Google Bewertung</p>
@@ -61,7 +58,6 @@ const Reviews: React.FC = () => {
                 <span key={i} className="text-yellow-500 text-2xl">★</span>
               ))}
             </div>
-            <p className="text-gray-600 mb-6 text-center text-2xl">⭐⭐⭐⭐⭐</p>
             <div className="text-center">
               <p className="font-bold text-gray-900 text-xl">Markus Franzl</p>
               <p className="text-gray-500">Google Bewertung</p>
