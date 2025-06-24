@@ -5,9 +5,8 @@ import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import Intro from '@/components/Intro';
 import Services from '@/components/Services';
-import WhyUs from '@/components/WhyUs';
+import Credibility from '@/components/Credibility';
 import Reviews from '@/components/Reviews';
-import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -24,9 +23,8 @@ const Index = () => {
       <Hero />
       <Intro />
       <Services />
-      <WhyUs />
+      <Credibility />
       <Reviews />
-      <About />
       <Contact />
       <Footer />
     </div>

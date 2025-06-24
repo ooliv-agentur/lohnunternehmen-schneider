@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
     <section className="py-24 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-6">
-          Anfrage starten – ohne Schnickschnack
+          Jetzt Kontakt aufnehmen
         </h2>
         <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
           Rufen Sie uns an oder schreiben Sie uns. Wir erstellen Ihnen ein maßgeschneidertes Angebot – ehrlich, schnell, direkt.
