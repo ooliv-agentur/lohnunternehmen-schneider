@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { X, TreePine, Shield, Leaf, Tractor, Phone, ArrowRight } from 'lucide-react';
+import { X, TreePine, Shield, Leaf, Tractor, Phone, ArrowRight, Users, Award } from 'lucide-react';
 
 interface NavigationProps {
   isOpen: boolean;
@@ -10,30 +10,30 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  const services = [
+  const einsatzbereiche = [
     {
       title: 'Baumarbeiten & Baumpflege',
-      description: 'Sicher & zertifiziert',
+      description: 'Zertifizierte Fällungen & Pflege mit Spezialtechnik',
       icon: TreePine
     },
     {
       title: 'EPS-Bekämpfung',
-      description: 'Professionelle Schädlingsbekämpfung',
+      description: 'Sichere Entfernung von Eichenprozessionsspinnern',
       icon: Shield
     },
     {
       title: 'Forstdienstleistungen',
-      description: 'Rückung bis Lichtraumprofil',
+      description: 'Holzeinschlag, Rückung, Lichtraumprofile',
       icon: TreePine
     },
     {
-      title: 'Landwirtschaft',
-      description: 'Technik für Ernte & Saison',
+      title: 'Landwirtschaftliche Unterstützung',
+      description: 'Mähwerke, Heuwender, Ballenpressen',
       icon: Tractor
     },
     {
       title: 'Natur- & Artenschutz',
-      description: 'Lebensräume schaffen',
+      description: 'Blühstreifen, Nistkästen, ökologische Pflege',
       icon: Leaf
     }
   ];
@@ -63,21 +63,21 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
                   Startseite
                 </div>
                 
-                {/* Services Section */}
+                {/* Einsatzbereiche Section */}
                 <div>
                   <div className="text-2xl font-light text-gray-900 mb-6 pb-2">
-                    Was wir anbieten
+                    Einsatzbereiche
                   </div>
                   <div className="ml-6 space-y-4">
-                    {services.map((service, index) => (
+                    {einsatzbereiche.map((bereich, index) => (
                       <div key={index} className="flex items-start space-x-4 hover:text-green-800 transition-colors cursor-pointer group py-2">
-                        <service.icon className="h-5 w-5 text-green-600 group-hover:text-green-800 mt-1 flex-shrink-0" />
+                        <bereich.icon className="h-5 w-5 text-green-600 group-hover:text-green-800 mt-1 flex-shrink-0" />
                         <div>
                           <div className="text-lg font-medium text-gray-900 group-hover:text-green-800">
-                            {service.title}
+                            {bereich.title}
                           </div>
                           <div className="text-sm text-gray-600 group-hover:text-green-700">
-                            {service.description}
+                            {bereich.description}
                           </div>
                         </div>
                       </div>
@@ -90,7 +90,11 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
                 </div>
                 
                 <div className="text-2xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer pb-2 border-b border-transparent hover:border-green-200">
-                  Kontakt
+                  Referenzen & Projekte
+                </div>
+                
+                <div className="text-2xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer pb-2 border-b border-transparent hover:border-green-200">
+                  Angebot anfordern
                 </div>
               </nav>
             </div>
@@ -111,15 +115,15 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
               
               <div className="space-y-3 text-gray-600">
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <Award className="w-4 h-4 text-green-600" />
                   <span>Zertifizierte Fachkräfte</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <Tractor className="w-4 h-4 text-green-600" />
                   <span>Eigener Maschinenpark</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                  <Users className="w-4 h-4 text-green-600" />
                   <span>Kostenlose Erstberatung</span>
                 </div>
               </div>
