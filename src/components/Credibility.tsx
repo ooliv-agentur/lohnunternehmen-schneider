@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BadgeCheck, Shield, Tractor, Award } from 'lucide-react';
+import { BadgeCheck, Shield, Tractor } from 'lucide-react';
 
 const Credibility: React.FC = () => {
   return (
@@ -13,12 +13,12 @@ const Credibility: React.FC = () => {
           </h2>
         </div>
         
-        <div className="grid lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid lg:grid-cols-3 gap-16 mb-16">
           <div className="text-center group">
-            <div className="bg-white p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
-              <BadgeCheck className="h-14 w-14 text-green-600 mx-auto mb-6" />
-              <h3 className="text-xl font-bold mb-4 text-gray-900">20+ Jahre Erfahrung</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+              <BadgeCheck className="h-16 w-16 text-green-600 mx-auto mb-8" />
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">20+ Jahre Erfahrung</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
                 Seit 2004 als Familienbetrieb etabliert. Zwischen Köln und Frankfurt verwurzelt, 
                 deutschlandweit im Einsatz.
               </p>
@@ -26,10 +26,10 @@ const Credibility: React.FC = () => {
           </div>
           
           <div className="text-center group">
-            <div className="bg-white p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
-              <Shield className="h-14 w-14 text-green-600 mx-auto mb-6" />
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Zertifizierte Fachkräfte</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+              <Shield className="h-16 w-16 text-green-600 mx-auto mb-8" />
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Zertifizierte Fachkräfte</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
                 European Tree Workers und Spezialisten nach höchsten Sicherheitsstandards. 
                 Dort arbeiten, wo andere nicht können.
               </p>
@@ -37,22 +37,12 @@ const Credibility: React.FC = () => {
           </div>
           
           <div className="text-center group">
-            <div className="bg-white p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
-              <Tractor className="h-14 w-14 text-green-600 mx-auto mb-6" />
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Eigener Maschinenpark</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
+            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+              <Tractor className="h-16 w-16 text-green-600 mx-auto mb-8" />
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Eigener Maschinenpark</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
                 Umfangreiche, moderne Ausstattung für effiziente Projektumsetzung. 
                 Keine Wartezeiten, keine Kompromisse.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center group">
-            <div className="bg-white p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
-              <Award className="h-14 w-14 text-green-600 mx-auto mb-6" />
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Zertifiziert nach höchsten Standards</h3>
-              <p className="text-gray-700 text-base leading-relaxed">
-                DFSZ-zertifiziert (Deutsches Forst-Service-Zertifikat) und FLL-zertifizierter Baumkontrolleur – geprüfte Qualität, auf die Sie sich verlassen können.
               </p>
             </div>
           </div>
