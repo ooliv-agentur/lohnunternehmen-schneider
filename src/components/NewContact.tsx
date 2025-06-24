@@ -23,7 +23,7 @@ const NewContact: React.FC = () => {
           </Button>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="flex flex-col items-center group">
             <Phone className="h-8 w-8 text-green-400 mb-4" />
             <p className="font-semibold text-xl text-white group-hover:text-green-400 transition-colors">02662 / 948186</p>
@@ -38,7 +38,7 @@ const NewContact: React.FC = () => {
           
           <div className="flex flex-col items-center group">
             <Mail className="h-8 w-8 text-green-400 mb-4" />
-            <p className="font-semibold text-lg text-white group-hover:text-green-400 transition-colors whitespace-nowrap overflow-hidden text-ellipsis max-w-full">info@lohnunternehmen-schneider.de</p>
+            <p className="font-semibold text-lg text-white group-hover:text-green-400 transition-colors whitespace-nowrap">info@lohnunternehmen-schneider.de</p>
             <p className="text-gray-400">E-Mail</p>
           </div>
         </div>
