@@ -2,13 +2,14 @@
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
-import Intro from '@/components/Intro';
-import Services from '@/components/Services';
-import Credibility from '@/components/Credibility';
-import Reviews from '@/components/Reviews';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
+import NewHero from '@/components/NewHero';
+import NewIntro from '@/components/NewIntro';
+import NewServices from '@/components/NewServices';
+import NewTrust from '@/components/NewTrust';
+import MachineGallery from '@/components/MachineGallery';
+import NewReviews from '@/components/NewReviews';
+import NewContact from '@/components/NewContact';
+import NewFooter from '@/components/NewFooter';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,13 +21,14 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navigation isOpen={isMenuOpen} onClose={handleMenuClose} />
       <Header onMenuToggle={handleMenuToggle} />
-      <Hero />
-      <Intro />
-      <Services />
-      <Credibility />
-      <Reviews />
-      <Contact />
-      <Footer />
+      <NewHero />
+      <NewIntro />
+      <NewServices />
+      <NewTrust />
+      <MachineGallery />
+      <NewReviews />
+      <NewContact />
+      <NewFooter />
     </div>
   );
 };
