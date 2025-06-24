@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BadgeCheck, Shield, Tractor } from 'lucide-react';
+import { BadgeCheck, Shield, Tractor, Award } from 'lucide-react';
 
 const Credibility: React.FC = () => {
   return (
@@ -13,12 +13,12 @@ const Credibility: React.FC = () => {
           </h2>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-16 mb-16">
+        <div className="grid lg:grid-cols-4 gap-12 mb-16">
           <div className="text-center group">
-            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
-              <BadgeCheck className="h-16 w-16 text-green-600 mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">20+ Jahre Erfahrung</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+            <div className="bg-white p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+              <BadgeCheck className="h-14 w-14 text-green-600 mx-auto mb-6" />
+              <h3 className="text-xl font-bold mb-4 text-gray-900">20+ Jahre Erfahrung</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
                 Seit 2004 als Familienbetrieb etabliert. Zwischen Köln und Frankfurt verwurzelt, 
                 deutschlandweit im Einsatz.
               </p>
@@ -26,10 +26,10 @@ const Credibility: React.FC = () => {
           </div>
           
           <div className="text-center group">
-            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
-              <Shield className="h-16 w-16 text-green-600 mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Zertifizierte Fachkräfte</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+            <div className="bg-white p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+              <Shield className="h-14 w-14 text-green-600 mx-auto mb-6" />
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Zertifizierte Fachkräfte</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
                 European Tree Workers und Spezialisten nach höchsten Sicherheitsstandards. 
                 Dort arbeiten, wo andere nicht können.
               </p>
@@ -37,13 +37,36 @@ const Credibility: React.FC = () => {
           </div>
           
           <div className="text-center group">
-            <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
-              <Tractor className="h-16 w-16 text-green-600 mx-auto mb-6" />
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Moderner Maschinenpark</h3>
-              <p className="text-gray-700 text-lg leading-relaxed">
+            <div className="bg-white p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+              <Tractor className="h-14 w-14 text-green-600 mx-auto mb-6" />
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Eigener Maschinenpark</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
                 Umfangreiche, moderne Ausstattung für effiziente Projektumsetzung. 
                 Keine Wartezeiten, keine Kompromisse.
               </p>
+            </div>
+          </div>
+
+          <div className="text-center group">
+            <div className="bg-gray-50 p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+              <Award className="h-14 w-14 text-green-600 mx-auto mb-6" />
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Zertifiziert & Geprüft</h3>
+              <div className="space-y-4">
+                <div className="bg-white p-3 rounded-lg border border-gray-200">
+                  <div className="flex items-center justify-center mb-2">
+                    <div className="w-8 h-8 bg-gray-300 rounded"></div>
+                  </div>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">DFSZ-zertifiziert</p>
+                  <p className="text-xs text-gray-600">Deutsches Forst-Service-Zertifikat</p>
+                </div>
+                <div className="bg-white p-3 rounded-lg border border-gray-200">
+                  <div className="flex items-center justify-center mb-2">
+                    <div className="w-8 h-8 bg-gray-300 rounded"></div>
+                  </div>
+                  <p className="text-sm font-semibold text-gray-900 mb-1">FLL-zertifiziert</p>
+                  <p className="text-xs text-gray-600">Baumkontrolleur nach FLL-Richtlinien</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
