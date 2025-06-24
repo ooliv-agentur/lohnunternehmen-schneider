@@ -10,7 +10,7 @@ const NewHero: React.FC = () => {
         <div className="w-full h-full bg-gradient-to-br from-gray-100 via-green-50/30 to-gray-200/40"></div>
       </div>
 
-      <div className="relative z-20 w-full mx-auto px-4 sm:px-6 py-32">
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 py-32">
         <div className="max-w-5xl space-y-8 sm:space-y-12">
           {/* Main H1 claim */}
           <div className="space-y-4 sm:space-y-6">
@@ -30,7 +30,7 @@ const NewHero: React.FC = () => {
           
           {/* Clear CTAs */}
           <div className="space-y-4 sm:space-y-6 pt-4 sm:pt-6">
-            <div className="flex flex-col gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
