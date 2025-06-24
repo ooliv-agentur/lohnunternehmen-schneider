@@ -47,10 +47,8 @@ const MachineGallery: React.FC = () => {
             <CarouselContent className="-ml-2 sm:-ml-4 md:-ml-6">
               {machineImages.map((image) => (
                 <CarouselItem key={image.id} className="pl-2 sm:pl-4 md:pl-6 basis-[85%] sm:basis-[45%] md:basis-[32%] lg:basis-[28.5%]">
-                  <div className="bg-white rounded-xl h-64 flex flex-col items-center justify-center p-6 hover:shadow-md transition-all duration-300 border border-gray-200">
-                    <div className="w-24 h-20 bg-gray-300 rounded-lg mb-6 flex items-center justify-center">
-                      <div className="w-12 h-10 bg-gray-400 rounded"></div>
-                    </div>
+                  <div className="flex flex-col items-center space-y-4">
+                    <div className="w-full h-48 bg-gray-300 rounded-lg"></div>
                     <span className="text-sm text-gray-700 text-center font-medium leading-tight">
                       {image.title}
                     </span>
