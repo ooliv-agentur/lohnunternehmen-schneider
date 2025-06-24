@@ -15,95 +15,96 @@ const Services: React.FC = () => {
           </p>
         </div>
         
-        {/* Main Service - Full Width */}
-        <div className="mb-20">
-          <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-3xl p-16 border border-green-200">
-            <div className="flex items-center space-x-12">
-              <div className="bg-green-600 p-8 rounded-3xl shadow-lg">
-                <TreePine className="h-16 w-16 text-white" />
+        {/* Unified Service Grid - All equally weighted */}
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="group cursor-pointer bg-gradient-to-r from-green-50 to-green-100 rounded-2xl p-8 border border-green-200 hover:shadow-lg transition-all duration-300">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="bg-green-600 p-4 rounded-xl">
+                <TreePine className="h-8 w-8 text-white" />
               </div>
-              <div className="flex-1">
-                <h3 className="text-4xl font-bold mb-6 text-gray-900">Spezialfällungen & Seilklettertechnik</h3>
-                <p className="text-xl text-gray-800 mb-8">
-                  Für gefährliche Lagen, große Höhen und sensibles Gelände
-                </p>
-                <div className="flex flex-wrap gap-6">
-                  <span className="text-green-700 font-medium">• Zertifiziert & ausgebildet</span>
-                  <span className="text-green-700 font-medium">• Hanglagen & Wohngebiete</span>
-                  <span className="text-green-700 font-medium">• Spezialtechnik</span>
-                </div>
-              </div>
+              <h3 className="text-2xl font-bold text-gray-900 group-hover:text-green-700">
+                Spezialfällungen & Seilklettertechnik
+              </h3>
             </div>
-          </div>
-        </div>
-
-        {/* Service Grid */}
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="group cursor-pointer">
-            <div className="flex items-start space-x-8 p-8 rounded-2xl hover:bg-gray-50 transition-colors">
-              <Shield className="h-12 w-12 text-green-600 mt-2 flex-shrink-0" />
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-green-700">EPS-Bekämpfung</h3>
-                <p className="text-gray-700 mb-4 text-lg">
-                  Sichere Entfernung von Eichenprozessionsspinnern
-                </p>
-                <div className="space-y-2">
-                  <div className="text-green-700">• Zertifizierte Schädlingsbekämpfung</div>
-                  <div className="text-green-700">• Schutz für Menschen & Natur</div>
-                  <div className="text-green-700">• Einsatzbereit im Westerwald</div>
-                </div>
-              </div>
+            <p className="text-gray-700 mb-4 text-lg">
+              Für gefährliche Lagen, große Höhen und sensibles Gelände
+            </p>
+            <div className="space-y-2">
+              <div className="text-green-700">• Zertifiziert & ausgebildet</div>
+              <div className="text-green-700">• Hanglagen & Wohngebiete</div>
+              <div className="text-green-700">• Spezialtechnik</div>
             </div>
           </div>
 
-          <div className="group cursor-pointer">
-            <div className="flex items-start space-x-8 p-8 rounded-2xl hover:bg-gray-50 transition-colors">
-              <Wrench className="h-12 w-12 text-green-600 mt-2 flex-shrink-0" />
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-green-700">Forstdienstleistungen</h3>
-                <p className="text-gray-700 mb-4 text-lg">
-                  Von der Rückung bis zum Lichtraumprofilschnitt
-                </p>
-                <div className="space-y-2">
-                  <div className="text-green-700">• Rückung & Holztransport</div>
-                  <div className="text-green-700">• Einschlag & Sortierung</div>
-                  <div className="text-green-700">• Forstpflege & Lichtraumprofil</div>
-                </div>
+          <div className="group cursor-pointer bg-gray-50 rounded-2xl p-8 hover:bg-gray-100 hover:shadow-lg transition-all duration-300">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="bg-green-600 p-4 rounded-xl">
+                <Shield className="h-8 w-8 text-white" />
               </div>
+              <h3 className="text-2xl font-bold text-gray-900 group-hover:text-green-700">
+                EPS-Bekämpfung
+              </h3>
+            </div>
+            <p className="text-gray-700 mb-4 text-lg">
+              Sichere Entfernung von Eichenprozessionsspinnern
+            </p>
+            <div className="space-y-2">
+              <div className="text-green-700">• Zertifizierte Schädlingsbekämpfung</div>
+              <div className="text-green-700">• Schutz für Menschen & Natur</div>
             </div>
           </div>
 
-          <div className="group cursor-pointer">
-            <div className="flex items-start space-x-8 p-8 rounded-2xl hover:bg-gray-50 transition-colors">
-              <Tractor className="h-12 w-12 text-green-600 mt-2 flex-shrink-0" />
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-green-700">Landwirtschaft</h3>
-                <p className="text-gray-700 mb-4 text-lg">
-                  Verlässlich, wenn's schnell gehen muss
-                </p>
-                <div className="space-y-2">
-                  <div className="text-green-700">• Mähwerke, Schwader & Wender</div>
-                  <div className="text-green-700">• Rundballenpressen</div>
-                  <div className="text-green-700">• Gülle- & Düngerausbringung</div>
-                </div>
+          <div className="group cursor-pointer bg-gray-50 rounded-2xl p-8 hover:bg-gray-100 hover:shadow-lg transition-all duration-300">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="bg-green-600 p-4 rounded-xl">
+                <Wrench className="h-8 w-8 text-white" />
               </div>
+              <h3 className="text-2xl font-bold text-gray-900 group-hover:text-green-700">
+                Forstdienstleistungen
+              </h3>
+            </div>
+            <p className="text-gray-700 mb-4 text-lg">
+              Von der Rückung bis zum Lichtraumprofilschnitt
+            </p>
+            <div className="space-y-2">
+              <div className="text-green-700">• Rückung & Holztransport</div>
+              <div className="text-green-700">• Forstpflege & Lichtraumprofil</div>
+            </div>
+          </div>
+
+          <div className="group cursor-pointer bg-gray-50 rounded-2xl p-8 hover:bg-gray-100 hover:shadow-lg transition-all duration-300">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="bg-green-600 p-4 rounded-xl">
+                <Tractor className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 group-hover:text-green-700">
+                Landwirtschaft
+              </h3>
+            </div>
+            <p className="text-gray-700 mb-4 text-lg">
+              Verlässlich, wenn's schnell gehen muss
+            </p>
+            <div className="space-y-2">
+              <div className="text-green-700">• Mähwerke & Rundballenpressen</div>
+              <div className="text-green-700">• Gülle- & Düngerausbringung</div>
             </div>
           </div>
           
-          <div className="group cursor-pointer">
-            <div className="flex items-start space-x-8 p-8 rounded-2xl hover:bg-gray-50 transition-colors">
-              <Leaf className="h-12 w-12 text-green-600 mt-2 flex-shrink-0" />
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-green-700">Natur- & Artenschutz</h3>
-                <p className="text-gray-700 mb-4 text-lg">
-                  Wenn Technik Natur bewahrt
-                </p>
-                <div className="space-y-2">
-                  <div className="text-green-700">• Krötenzäune & Brutplattformen</div>
-                  <div className="text-green-700">• Wiesenpflege & Mähgutübertragung</div>
-                  <div className="text-green-700">• Insektenhotels & Amphibienschutz</div>
-                </div>
+          <div className="group cursor-pointer bg-gray-50 rounded-2xl p-8 hover:bg-gray-100 hover:shadow-lg transition-all duration-300">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="bg-green-600 p-4 rounded-xl">
+                <Leaf className="h-8 w-8 text-white" />
               </div>
+              <h3 className="text-2xl font-bold text-gray-900 group-hover:text-green-700">
+                Natur- & Artenschutz
+              </h3>
+            </div>
+            <p className="text-gray-700 mb-4 text-lg">
+              Wenn Technik Natur bewahrt
+            </p>
+            <div className="space-y-2">
+              <div className="text-green-700">• Krötenzäune & Brutplattformen</div>
+              <div className="text-green-700">• Wiesenpflege & Amphibienschutz</div>
             </div>
           </div>
         </div>
