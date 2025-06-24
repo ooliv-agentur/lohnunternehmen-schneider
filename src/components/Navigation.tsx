@@ -25,63 +25,63 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
         <X className="h-6 w-6 text-green-700" />
       </Button>
 
-      <div className="min-h-screen flex items-center justify-between px-8 max-w-6xl mx-auto overflow-hidden">
+      <div className="min-h-screen flex flex-col lg:flex-row lg:items-center lg:justify-between px-6 lg:px-8 max-w-6xl mx-auto overflow-hidden pt-20 lg:pt-0">
         {/* Main Navigation */}
-        <div className="flex-1">
+        <div className="flex-1 mb-8 lg:mb-0">
           <nav className="space-y-6">
             <div className="space-y-3">
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
                 Startseite
               </div>
               
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
                 Über uns
               </div>
               
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
                 Maschinenpark
               </div>
               
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
                 Einsatzbereiche
               </div>
             </div>
 
             {/* Sub-services */}
             <div className="ml-6 space-y-2">
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
+              <div className="text-base md:text-lg lg:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
                 Baumpflege & Fällung
               </div>
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
+              <div className="text-base md:text-lg lg:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
                 EPS-Bekämpfung
               </div>
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
+              <div className="text-base md:text-lg lg:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
                 Forstdienstleistungen
               </div>
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
+              <div className="text-base md:text-lg lg:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
                 Landwirtschaft
               </div>
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
+              <div className="text-base md:text-lg lg:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
                 Artenschutz
               </div>
             </div>
 
             <div className="pt-6">
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
                 Kontakt
               </div>
             </div>
           </nav>
         </div>
 
-        {/* Contact Info Block */}
-        <div className="flex-1 max-w-md ml-16">
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+        {/* Contact Info Block - now stacks below on mobile */}
+        <div className="w-full lg:flex-1 lg:max-w-md lg:ml-16">
+          <div className="bg-gray-50 rounded-2xl p-6 lg:p-8">
+            <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 lg:mb-6">
               Direkter Kontakt
             </h3>
             
-            <div className="space-y-4 mb-8">
+            <div className="space-y-3 lg:space-y-4 mb-6 lg:mb-8">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-green-600 mr-3" />
                 <div>
