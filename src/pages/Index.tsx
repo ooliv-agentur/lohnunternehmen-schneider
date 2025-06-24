@@ -1,86 +1,88 @@
 
 import React, { useState } from 'react';
-import { Phone, Mail, Menu, X, Star } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Full Screen Navigation Overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-50 bg-white flex">
+          {/* Close Button */}
+          <button 
+            onClick={() => setIsMenuOpen(false)}
+            className="absolute top-8 right-8 p-2 hover:bg-gray-100 rounded-full transition-colors"
+          >
+            <X className="h-8 w-8 text-gray-900" />
+          </button>
+
+          <div className="flex-1 flex">
+            {/* Left Column - Navigation Structure */}
+            <div className="flex-1 flex flex-col justify-center px-16 max-w-2xl">
+              <nav className="space-y-8">
+                <div className="text-5xl font-light text-gray-900 border-b border-gray-200 pb-4">
+                  Startseite
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="text-5xl font-light text-gray-900">
+                    Leistungen
+                  </div>
+                  <div className="ml-12 space-y-4 text-2xl text-gray-600">
+                    <div>Baumarbeiten & Baumpflege</div>
+                    <div>EPS-Bekämpfung</div>
+                    <div>Forstdienstleistungen</div>
+                    <div>Landwirtschaft</div>
+                    <div>Natur- & Artenschutz</div>
+                  </div>
+                </div>
+                
+                <div className="text-5xl font-light text-gray-900">
+                  Über uns
+                </div>
+                
+                <div className="text-5xl font-light text-gray-900">
+                  Kontakt
+                </div>
+              </nav>
+            </div>
+
+            {/* Right Column - Project Context */}
+            <div className="flex-1 flex flex-col justify-center px-16 bg-gray-50">
+              <div className="max-w-lg">
+                <h2 className="text-3xl font-light text-gray-900 mb-8">
+                  Website-Struktur
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed mb-12">
+                  Diese Seite ist ein strategischer Prototyp im Rahmen eines geplanten Website-Relaunchs. Die hier gezeigte Struktur bildet das Fundament für eine moderne, SEO-optimierte Website mit detaillierten Unterseiten.
+                </p>
+                <p className="text-base text-gray-500 italic">
+                  Weitere Inhalte, Designentwicklung und technische Umsetzung folgen im nächsten Projektschritt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Header with Burger Menu */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+      <header className="fixed top-0 left-0 right-0 z-40 bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="font-bold text-xl text-gray-900">
             Sebastian Schneider Lohnunternehmen
           </div>
           
-          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="border border-gray-300">
-                <Menu className="h-6 w-6 text-gray-900" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-full sm:max-w-md bg-white text-gray-900 border-l border-gray-200">
-              <div className="flex flex-col h-full">
-                <div className="flex justify-between items-center mb-12 pb-6 border-b border-gray-200">
-                  <h2 className="text-2xl font-bold text-gray-900">Navigation</h2>
-                  <Button 
-                    variant="ghost" 
-                    size="icon" 
-                    onClick={() => setIsMenuOpen(false)}
-                    className="text-gray-900 hover:bg-gray-100"
-                  >
-                    <X className="h-6 w-6" />
-                  </Button>
-                </div>
-                
-                <nav className="flex flex-col space-y-1 flex-1">
-                  <div className="text-lg py-4 px-4 bg-gray-100 border border-gray-200 font-medium">
-                    Startseite
-                  </div>
-                  
-                  <div className="border border-gray-200">
-                    <div className="text-lg py-4 px-4 font-medium border-b border-gray-200">
-                      Leistungen
-                    </div>
-                    <div className="ml-0 bg-gray-50">
-                      <div className="text-sm py-3 px-6 border-b border-gray-200 text-gray-700">
-                        Baumarbeiten & Baumpflege
-                      </div>
-                      <div className="text-sm py-3 px-6 border-b border-gray-200 text-gray-700">
-                        EPS-Bekämpfung
-                      </div>
-                      <div className="text-sm py-3 px-6 border-b border-gray-200 text-gray-700">
-                        Forstdienstleistungen
-                      </div>
-                      <div className="text-sm py-3 px-6 border-b border-gray-200 text-gray-700">
-                        Landwirtschaft
-                      </div>
-                      <div className="text-sm py-3 px-6 text-gray-700">
-                        Natur- & Artenschutz
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="text-lg py-4 px-4 border border-gray-200 font-medium">
-                    Über uns
-                  </div>
-                  <div className="text-lg py-4 px-4 border border-gray-200 font-medium">
-                    Kontakt
-                  </div>
-                </nav>
-                
-                <div className="mt-auto pt-8 border-t border-gray-200">
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    Diese Seite ist ein strategischer Prototyp. Weitere Inhalte folgen im finalen Relaunch.
-                  </p>
-                </div>
-              </div>
-            </SheetContent>
-          </Sheet>
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="border border-gray-300"
+            onClick={() => setIsMenuOpen(true)}
+          >
+            <Menu className="h-6 w-6 text-gray-900" />
+          </Button>
         </div>
       </header>
 
