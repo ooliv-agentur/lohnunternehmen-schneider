@@ -8,43 +8,38 @@ interface NavigationProps {
 }
 
 const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
-
-  const einsatzbereiche = [
-    'Baumarbeiten & Baumpflege',
-    'EPS-Bekämpfung',
-    'Forstdienstleistungen',
-    'Landwirtschaftliche Arbeiten',
-    'Natur- & Artenschutz'
-  ];
-
   return (
-    <div className="fixed inset-0 z-50 bg-white">
+    <div 
+      className={`fixed inset-0 z-50 bg-white transition-all duration-500 ease-in-out ${
+        isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+      }`}
+    >
+      {/* Close button - positioned to match header menu button */}
       <button 
         onClick={onClose}
-        className="absolute top-12 right-12 p-4 hover:bg-gray-50 rounded-full transition-colors group z-10"
+        className="fixed top-4 right-6 p-4 hover:bg-gray-50 rounded-full transition-all duration-200 group z-10"
       >
-        <X className="h-10 w-10 text-gray-800 group-hover:text-gray-900" />
+        <X className="h-6 w-6 text-green-700 group-hover:text-green-800 transition-colors" />
       </button>
 
       <div className="min-h-screen flex items-center justify-center px-8">
-        <div className="max-w-5xl mx-auto w-full">
-          <nav className="space-y-20">
+        <div className="max-w-4xl mx-auto w-full">
+          <nav className="space-y-16">
             {/* Hauptnavigation */}
-            <div className="space-y-8">
-              <div className="text-7xl md:text-9xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight leading-none">
+            <div className="space-y-6">
+              <div className="text-4xl md:text-5xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight leading-tight">
                 Startseite
               </div>
               
-              <div className="text-7xl md:text-9xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight leading-none">
+              <div className="text-4xl md:text-5xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight leading-tight">
                 Über uns
               </div>
               
-              <div className="text-7xl md:text-9xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight leading-none">
+              <div className="text-4xl md:text-5xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight leading-tight">
                 Maschinenpark
               </div>
               
-              <div className="text-7xl md:text-9xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight leading-none">
+              <div className="text-4xl md:text-5xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight leading-tight">
                 Kontakt
               </div>
             </div>
@@ -53,17 +48,27 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
             <div className="w-full h-px bg-gray-200"></div>
             
             {/* Einsatzbereiche */}
-            <div className="space-y-8">
-              <div className="text-4xl md:text-5xl font-light text-gray-500 tracking-tight mb-12">
+            <div className="space-y-6">
+              <div className="text-2xl md:text-3xl font-light text-gray-500 tracking-tight mb-8">
                 Einsatzbereiche
               </div>
               
-              <div className="space-y-6">
-                {einsatzbereiche.map((bereich, index) => (
-                  <div key={index} className="text-3xl md:text-4xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-3 tracking-tight">
-                    {bereich}
-                  </div>
-                ))}
+              <div className="space-y-4 ml-4">
+                <div className="text-xl md:text-2xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-2 tracking-tight">
+                  Baumarbeiten & Baumpflege
+                </div>
+                <div className="text-xl md:text-2xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-2 tracking-tight">
+                  EPS-Bekämpfung
+                </div>
+                <div className="text-xl md:text-2xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-2 tracking-tight">
+                  Forstdienstleistungen
+                </div>
+                <div className="text-xl md:text-2xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-2 tracking-tight">
+                  Landwirtschaftliche Arbeiten
+                </div>
+                <div className="text-xl md:text-2xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-2 tracking-tight">
+                  Natur- & Artenschutz
+                </div>
               </div>
             </div>
           </nav>
