@@ -15,13 +15,15 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
         isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >
-      {/* Close button - fixed position matching burger button */}
-      <button 
+      {/* Close button - positioned exactly like burger button */}
+      <Button 
+        variant="ghost" 
+        size="icon" 
+        className="fixed top-6 right-6 border border-green-200 hover:border-green-400 hover:bg-green-50 transition-all duration-300 z-50"
         onClick={onClose}
-        className="fixed top-4 right-4 p-4 hover:bg-gray-50 rounded-full transition-all duration-300 group z-50"
       >
-        <X className="h-6 w-6 text-green-700 group-hover:text-green-800 transition-colors" />
-      </button>
+        <X className="h-6 w-6 text-green-700" />
+      </Button>
 
       <div className="min-h-screen flex items-center justify-between px-8 max-w-6xl mx-auto overflow-hidden">
         {/* Main Navigation */}

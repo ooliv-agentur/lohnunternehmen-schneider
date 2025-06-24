@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
         <Button 
           variant="ghost" 
           size="icon" 
-          className="border border-green-200 hover:border-green-400 hover:bg-green-50 transition-all duration-300 mr-2"
+          className="fixed top-6 right-6 border border-green-200 hover:border-green-400 hover:bg-green-50 transition-all duration-300 z-50"
           onClick={onMenuToggle}
         >
           <Menu className="h-6 w-6 text-green-700" />
