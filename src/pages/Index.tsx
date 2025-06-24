@@ -37,27 +37,48 @@ const Index = () => {
                   </Button>
                 </div>
                 
-                <nav className="flex flex-col space-y-4 flex-1">
-                  <a href="#" className="text-lg py-3 px-4 rounded hover:bg-green-700 transition-colors">
+                <nav className="flex flex-col space-y-3 flex-1">
+                  <div className="text-lg py-3 px-4 rounded bg-green-700/50">
                     → Startseite
-                  </a>
-                  <a href="#" className="text-lg py-3 px-4 rounded hover:bg-green-700 transition-colors">
-                    → Leistungen
-                  </a>
-                  <a href="#" className="text-lg py-3 px-4 rounded hover:bg-green-700 transition-colors">
+                  </div>
+                  
+                  <div>
+                    <div className="text-lg py-3 px-4 rounded hover:bg-green-700 transition-colors cursor-pointer">
+                      → Leistungen
+                    </div>
+                    <div className="ml-6 space-y-2 mt-2">
+                      <div className="text-sm py-2 px-4 text-green-200 hover:bg-green-700 rounded cursor-pointer">
+                        ↳ Baumarbeiten & Baumpflege
+                      </div>
+                      <div className="text-sm py-2 px-4 text-green-200 hover:bg-green-700 rounded cursor-pointer">
+                        ↳ EPS-Bekämpfung
+                      </div>
+                      <div className="text-sm py-2 px-4 text-green-200 hover:bg-green-700 rounded cursor-pointer">
+                        ↳ Forstdienstleistungen
+                      </div>
+                      <div className="text-sm py-2 px-4 text-green-200 hover:bg-green-700 rounded cursor-pointer">
+                        ↳ Landwirtschaft
+                      </div>
+                      <div className="text-sm py-2 px-4 text-green-200 hover:bg-green-700 rounded cursor-pointer">
+                        ↳ Natur- & Artenschutz
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="text-lg py-3 px-4 rounded hover:bg-green-700 transition-colors cursor-pointer">
                     → Über uns
-                  </a>
-                  <a href="#" className="text-lg py-3 px-4 rounded hover:bg-green-700 transition-colors">
-                    → Referenzen
-                  </a>
-                  <a href="#" className="text-lg py-3 px-4 rounded hover:bg-green-700 transition-colors">
+                  </div>
+                  <div className="text-lg py-3 px-4 rounded hover:bg-green-700 transition-colors cursor-pointer">
                     → Kontakt
-                  </a>
+                  </div>
                 </nav>
                 
                 <div className="mt-auto pt-6 border-t border-green-700">
-                  <p className="text-sm text-green-200 italic">
-                    Diese Website wird aktuell für Sie vorbereitet von der ooliv Werbeagentur
+                  <p className="text-sm text-green-200 italic mb-2">
+                    Diese Seite ist ein erster Prototyp im Rahmen eines Website-Relaunchs durch die ooliv Werbeagentur.
+                  </p>
+                  <p className="text-xs text-green-300">
+                    Weitere Inhalte und Unterseiten folgen.
                   </p>
                 </div>
               </div>
@@ -92,115 +113,141 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Teaser */}
+      {/* Service Teasers - Structured for Future Individual Pages */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Unsere Leistungen
+              Unsere Leistungsbereiche
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Professionelle Lösungen für Baum, Forst und Landschaft – 
-              mit eigenem Maschinenpark und über 20 Jahren Erfahrung
+              Jeder Bereich wird eine eigene Seite mit detaillierten Informationen, 
+              Referenzen und spezifischen Kontaktmöglichkeiten erhalten.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="text-5xl mb-4">🌳</div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Baumarbeiten</h3>
-                <p className="text-gray-600 mb-4">
-                  Fällungen, Pflege nach ZTV-Baumpflege, Seilklettertechnik
-                </p>
-                <div className="text-green-600 font-medium text-sm">
-                  Mehr erfahren →
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Baumarbeiten Teaser */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-l-4 border-l-green-600">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="text-4xl">🌳</div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900">Baumarbeiten & Baumpflege</h3>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      Professionelle Baumfällungen, Pflege nach ZTV-Baumpflege und Seilklettertechnik für schwer zugängliche Bereiche. 
+                      Mit Spezialtechnik wie Seilwinde und Fällkeilen sowie Einbau von Kronensicherungen.
+                    </p>
+                    <div className="text-green-600 font-medium text-sm flex items-center">
+                      <span>Zur Detailseite →</span>
+                      <span className="ml-2 text-xs bg-green-100 px-2 py-1 rounded">(in Vorbereitung)</span>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="text-5xl mb-4">🌲</div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Forstpflege</h3>
-                <p className="text-gray-600 mb-4">
-                  Holzeinschlag, Rückung, Lichtraumprofilschnitt
-                </p>
-                <div className="text-green-600 font-medium text-sm">
-                  Mehr erfahren →
+            {/* EPS-Bekämpfung Teaser */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-l-4 border-l-orange-500">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="text-4xl">🐛</div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900">EPS-Bekämpfung</h3>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      Fachgerechte Entfernung von Eichenprozessionsspinner durch zertifizierte Fachkräfte. 
+                      Inklusive Absaugung, Schutzkleidung und Verklebung der Raupenhaare.
+                    </p>
+                    <div className="text-orange-600 font-medium text-sm flex items-center">
+                      <span>Zur Detailseite →</span>
+                      <span className="ml-2 text-xs bg-orange-100 px-2 py-1 rounded">(in Vorbereitung)</span>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="text-5xl mb-4">🚜</div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Landwirtschaft</h3>
-                <p className="text-gray-600 mb-4">
-                  Unterstützung für Landwirte, Mähwerk, Ballenpresse
-                </p>
-                <div className="text-green-600 font-medium text-sm">
-                  Mehr erfahren →
+            {/* Forstdienstleistungen Teaser */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-l-4 border-l-blue-600">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="text-4xl">🌲</div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900">Forstdienstleistungen</h3>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      Holzeinschlag, Rückung und Lichtraumprofilschnitt. Bankett- und Grabenpflege, 
+                      Kulturpflege sowie Seilwindenarbeiten mit professionellem Equipment.
+                    </p>
+                    <div className="text-blue-600 font-medium text-sm flex items-center">
+                      <span>Zur Detailseite →</span>
+                      <span className="ml-2 text-xs bg-blue-100 px-2 py-1 rounded">(in Vorbereitung)</span>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="text-5xl mb-4">🦋</div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Artenschutz</h3>
-                <p className="text-gray-600 mb-4">
-                  Blühstreifen, Nistkästen, Biotoppflege
-                </p>
-                <div className="text-green-600 font-medium text-sm">
-                  Mehr erfahren →
+            {/* Landwirtschaft Teaser */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-l-4 border-l-yellow-600">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="text-4xl">🚜</div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-gray-900">Landwirtschaftliche Unterstützung</h3>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      Umfassende Unterstützung für Westerwälder Landwirte mit Mähwerk, Heuwender, 
+                      Schwader, Ballenpresse und Düngerstreuer sowie Bodenpflege.
+                    </p>
+                    <div className="text-yellow-600 font-medium text-sm flex items-center">
+                      <span>Zur Detailseite →</span>
+                      <span className="ml-2 text-xs bg-yellow-100 px-2 py-1 rounded">(in Vorbereitung)</span>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
+          </div>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="text-5xl mb-4">🐛</div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">EPS-Bekämpfung</h3>
-                <p className="text-gray-600 mb-4">
-                  Eichenprozessionsspinner fachgerecht entfernen
-                </p>
-                <div className="text-green-600 font-medium text-sm">
-                  Mehr erfahren →
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="text-5xl mb-4">🪓</div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Entsorgung</h3>
-                <p className="text-gray-600 mb-4">
-                  Häckseln, Wurzelstockfräsen, Brennholz
-                </p>
-                <div className="text-green-600 font-medium text-sm">
-                  Mehr erfahren →
-                </div>
-              </CardContent>
-            </Card>
+          {/* Additional Services Preview */}
+          <div className="mt-16 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">Weitere Spezialbereiche</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="p-6 bg-white rounded-lg shadow-sm border">
+                <div className="text-3xl mb-4">🦋</div>
+                <h4 className="font-bold mb-2">Natur- & Artenschutz</h4>
+                <p className="text-sm text-gray-600">Blühstreifen, Nistkästen, Biotoppflege und Amphibienschutzzäune</p>
+              </div>
+              <div className="p-6 bg-white rounded-lg shadow-sm border">
+                <div className="text-3xl mb-4">🪓</div>
+                <h4 className="font-bold mb-2">Entsorgung & Häckseln</h4>
+                <p className="text-sm text-gray-600">Wurzelstockfräsen, Holzhäckseln und nachhaltige Verwertung</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Trust Section */}
+      {/* Trust Section - Preview for "Über uns" Page */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Über Lohnunternehmen Schneider
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Ein Einblick in unser Familienunternehmen – die vollständige Geschichte und Details 
+              finden Sie auf der künftigen "Über uns"-Seite.
+            </p>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Warum Lohnunternehmen Schneider?
-              </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-3 h-3 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Über 20 Jahre Erfahrung</h3>
-                    <p className="text-gray-600">Familiengeführtes Unternehmen mit bewährter Expertise</p>
+                    <p className="text-gray-600">Familiengeführtes Unternehmen mit bewährter Expertise im Westerwald</p>
                   </div>
                 </div>
                 
@@ -208,7 +255,7 @@ const Index = () => {
                   <div className="w-3 h-3 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Zertifiziert & geschult</h3>
-                    <p className="text-gray-600">ZTV-Baumpflege, DFSZ-zertifiziert, modernste Technik</p>
+                    <p className="text-gray-600">ZTV-Baumpflege, DFSZ-zertifiziert, modernste Sicherheitstechnik</p>
                   </div>
                 </div>
                 
@@ -216,14 +263,17 @@ const Index = () => {
                   <div className="w-3 h-3 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Eigener Maschinenpark</h3>
-                    <p className="text-gray-600">Von Hubarbeitsbühne bis Seilklettertechnik</p>
+                    <p className="text-gray-600">Von Hubarbeitsbühne bis Seilklettertechnik – alles aus einer Hand</p>
                   </div>
                 </div>
               </div>
               
-              <Button className="mt-8 bg-green-600 hover:bg-green-700 text-white">
-                Mehr über uns erfahren
-              </Button>
+              <div className="mt-8 p-4 bg-gray-50 rounded-lg">
+                <p className="text-sm text-gray-600 italic">
+                  Mehr über unsere Geschichte, das Team und unsere Philosophie 
+                  erfahren Sie auf der künftigen "Über uns"-Seite.
+                </p>
+              </div>
             </div>
             
             <div className="relative">
@@ -238,15 +288,18 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Teaser */}
+      {/* Contact Preview - Will become full contact page */}
       <section className="py-20 bg-green-50">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Sprechen wir über Ihr Projekt
+            Kontakt & Anfrage
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-            Sie möchten Bäume pflegen, Flächen bearbeiten oder benötigen Hilfe bei landwirtschaftlichen Arbeiten? 
-            Dann freuen wir uns über Ihre Anfrage.
+          <p className="text-lg text-gray-600 mb-4 max-w-3xl mx-auto">
+            Sprechen Sie uns direkt an oder nutzen Sie künftig das ausführliche Kontaktformular 
+            auf der separaten Kontaktseite.
+          </p>
+          <p className="text-sm text-gray-500 mb-8">
+            (Vollständiges Kontaktformular, Anfahrtskarte und Öffnungszeiten folgen auf eigener Seite)
           </p>
           
           <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -276,7 +329,7 @@ const Index = () => {
           </div>
           
           <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-            Kontaktformular öffnen
+            Zur Kontaktseite →
           </Button>
         </div>
       </section>
@@ -295,7 +348,7 @@ const Index = () => {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Kontakt</h4>
+              <h4 className="font-semibold mb-4">Schnellkontakt</h4>
               <p className="text-gray-400 text-sm mb-2">
                 Tel: 02662 948186
               </p>
@@ -308,21 +361,29 @@ const Index = () => {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Rechtliches</h4>
-              <div className="space-y-2">
-                <a href="#" className="text-gray-400 hover:text-white text-sm block">Impressum</a>
-                <a href="#" className="text-gray-400 hover:text-white text-sm block">Datenschutz</a>
+              <h4 className="font-semibold mb-4">Website-Struktur</h4>
+              <div className="space-y-2 text-sm">
+                <div className="text-gray-400">Impressum (geplant)</div>
+                <div className="text-gray-400">Datenschutz (geplant)</div>
+                <div className="text-gray-400">Sitemap (geplant)</div>
               </div>
             </div>
           </div>
           
-          <div className="border-t border-gray-800 pt-8 mt-8 text-center">
-            <p className="text-gray-400 text-sm">
-              © 2024 Lohnunternehmen Schneider. Alle Rechte vorbehalten.
-            </p>
-            <p className="text-gray-500 text-xs mt-2 italic">
-              Website-Konzept in Vorbereitung durch ooliv Werbeagentur
-            </p>
+          <div className="border-t border-gray-800 pt-8 mt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-gray-400 text-sm mb-4 md:mb-0">
+                © 2024 Lohnunternehmen Schneider. Alle Rechte vorbehalten.
+              </p>
+              <div className="text-gray-500 text-xs text-center md:text-right">
+                <p className="italic mb-1">
+                  Website-Prototyp in Entwicklung durch ooliv Werbeagentur
+                </p>
+                <p>
+                  Ausbau zu vollständiger Website mit Unterseiten geplant
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
