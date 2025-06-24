@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BadgeCheck, Shield, Tractor } from 'lucide-react';
 
@@ -44,29 +43,36 @@ const NewTrust: React.FC = () => {
           </div>
         </div>
 
-        {/* Certification bar */}
-        <div className="bg-green-50 rounded-2xl p-8 text-center border border-green-100">
-          <div className="flex items-center justify-center space-x-8 text-gray-700">
-            <span className="font-bold text-gray-900 text-lg">Zertifiziert:</span>
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-green-600 rounded flex items-center justify-center">
-                <BadgeCheck className="w-5 h-5 text-white" />
+        {/* Certification bar - fixed for mobile */}
+        <div className="bg-green-50 rounded-2xl p-4 sm:p-8 text-center border border-green-100">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-gray-700">
+            <span className="font-bold text-gray-900 text-base sm:text-lg">Zertifiziert:</span>
+            
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+              <div className="flex items-center space-x-2">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-600 rounded flex items-center justify-center">
+                  <BadgeCheck className="w-3 h-3 sm:w-5 sm:h-5 text-white" />
+                </div>
+                <span className="font-medium text-sm sm:text-base">DFSZ</span>
               </div>
-              <span className="font-medium">DFSZ</span>
-            </div>
-            <span className="text-gray-400">·</span>
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-green-600 rounded flex items-center justify-center">
-                <BadgeCheck className="w-5 h-5 text-white" />
+              
+              <span className="text-gray-400 hidden sm:inline">·</span>
+              
+              <div className="flex items-center space-x-2">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-600 rounded flex items-center justify-center">
+                  <BadgeCheck className="w-3 h-3 sm:w-5 sm:h-5 text-white" />
+                </div>
+                <span className="font-medium text-sm sm:text-base">FLL Baumkontrolleur</span>
               </div>
-              <span className="font-medium">FLL Baumkontrolleur</span>
-            </div>
-            <span className="text-gray-400">·</span>
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-green-600 rounded flex items-center justify-center">
-                <BadgeCheck className="w-5 h-5 text-white" />
+              
+              <span className="text-gray-400 hidden sm:inline">·</span>
+              
+              <div className="flex items-center space-x-2">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-600 rounded flex items-center justify-center">
+                  <BadgeCheck className="w-3 h-3 sm:w-5 sm:h-5 text-white" />
+                </div>
+                <span className="font-medium text-sm sm:text-base">European Tree Worker</span>
               </div>
-              <span className="font-medium">European Tree Worker</span>
             </div>
           </div>
         </div>
