@@ -5,12 +5,12 @@ import { Phone, Mail } from 'lucide-react';
 
 const NewContact: React.FC = () => {
   return (
-    <section className="py-24 bg-gray-900 text-white">
+    <section className="py-24 bg-[#0C0F16] text-white">
       <div className="max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Jetzt Kontakt aufnehmen
         </h2>
-        <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+        <p className="text-xl mb-12 max-w-3xl mx-auto" style={{ color: '#CBD5E1' }}>
           Rufen Sie uns an oder schreiben Sie uns – wir beraten Sie ehrlich & erstellen ein Angebot.
         </p>
         
@@ -38,7 +38,7 @@ const NewContact: React.FC = () => {
           
           <div className="flex flex-col items-center group">
             <Mail className="h-8 w-8 text-green-400 mb-4" />
-            <p className="font-semibold text-lg text-white group-hover:text-green-400 transition-colors break-all">info@lohnunternehmen-schneider.de</p>
+            <p className="font-semibold text-lg text-white group-hover:text-green-400 transition-colors whitespace-nowrap overflow-hidden text-ellipsis max-w-full">info@lohnunternehmen-schneider.de</p>
             <p className="text-gray-400">E-Mail</p>
           </div>
         </div>
