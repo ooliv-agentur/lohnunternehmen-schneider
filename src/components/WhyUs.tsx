@@ -1,59 +1,50 @@
 
 import React from 'react';
-import { Clock, Award, TreePine, Users } from 'lucide-react';
+import { Clock, Award, TreePine } from 'lucide-react';
 
 const WhyUs: React.FC = () => {
   return (
-    <section className="py-28 bg-gray-50">
+    <section className="py-32 bg-gradient-to-br from-gray-50 to-green-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-gray-900 mb-8">
-            Deshalb beauftragen uns Kommunen, Landwirte & Forstämter
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+            Seit über 20 Jahren im Einsatz für
+            <span className="block text-green-700">Sicherheit, Nachhaltigkeit & Artenvielfalt</span>
           </h2>
-          <p className="text-2xl text-gray-600 leading-relaxed">
-            Weil wir effizient, flexibel und mit zertifizierter Technik arbeiten.
-          </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-3 gap-16">
           <div className="text-center group">
-            <div className="bg-green-100 p-6 rounded-2xl w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:bg-green-200 transition-colors">
-              <Clock className="h-8 w-8 text-green-600" />
+            <div className="bg-white p-12 rounded-3xl shadow-lg mb-8 group-hover:shadow-xl transition-shadow">
+              <Clock className="h-16 w-16 text-green-600 mx-auto mb-6" />
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">20+ Jahre Erfahrung</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Seit 2004 als Familienbetrieb etabliert. Zwischen Köln und Frankfurt verwurzelt, 
+                deutschlandweit im Einsatz.
+              </p>
             </div>
-            <h3 className="text-xl font-bold mb-4 text-gray-900">Effiziente Umsetzung</h3>
-            <p className="text-gray-600 leading-relaxed">
-              Ohne lange Wartezeiten – mit eigenem Maschinenpark sofort einsatzbereit.
-            </p>
           </div>
-
+          
           <div className="text-center group">
-            <div className="bg-green-100 p-6 rounded-2xl w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:bg-green-200 transition-colors">
-              <Award className="h-8 w-8 text-green-600" />
+            <div className="bg-white p-12 rounded-3xl shadow-lg mb-8 group-hover:shadow-xl transition-shadow">
+              <Award className="h-16 w-16 text-green-600 mx-auto mb-6" />
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Zertifizierte Fachkräfte</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                European Tree Workers und Spezialisten nach höchsten Sicherheitsstandards. 
+                Dort arbeiten, wo andere nicht können.
+              </p>
             </div>
-            <h3 className="text-xl font-bold mb-4 text-gray-900">Zertifizierte Qualität</h3>
-            <p className="text-gray-600 leading-relaxed">
-              European Tree Worker-Zertifizierung und fachgerechte Ausbildung aller Mitarbeiter.
-            </p>
           </div>
-
+          
           <div className="text-center group">
-            <div className="bg-green-100 p-6 rounded-2xl w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:bg-green-200 transition-colors">
-              <TreePine className="h-8 w-8 text-green-600" />
+            <div className="bg-white p-12 rounded-3xl shadow-lg mb-8 group-hover:shadow-xl transition-shadow">
+              <TreePine className="h-16 w-16 text-green-600 mx-auto mb-6" />
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Eigener Maschinenpark</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Umfangreiche, moderne Ausstattung für effiziente Projektumsetzung. 
+                Keine Wartezeiten, keine Kompromisse.
+              </p>
             </div>
-            <h3 className="text-xl font-bold mb-4 text-gray-900">Spezialtechnik</h3>
-            <p className="text-gray-600 leading-relaxed">
-              Moderne Ausrüstung für schwierige Einsätze in Hanglagen und Wohngebieten.
-            </p>
-          </div>
-
-          <div className="text-center group">
-            <div className="bg-green-100 p-6 rounded-2xl w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:bg-green-200 transition-colors">
-              <Users className="h-8 w-8 text-green-600" />
-            </div>
-            <h3 className="text-xl font-bold mb-4 text-gray-900">Persönliche Beratung</h3>
-            <p className="text-gray-600 leading-relaxed">
-              Kostenlose Vor-Ort-Besichtigung und maßgeschneiderte Lösungen für Ihr Projekt.
-            </p>
           </div>
         </div>
       </div>

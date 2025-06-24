@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
               © 2025 Sebastian Schneider Lohnunternehmen
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Impressum</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Datenschutz</a>
+              <span className="text-gray-400">Impressum</span>
+              <span className="text-gray-400">Datenschutz</span>
             </div>
           </div>
         </div>

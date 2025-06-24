@@ -5,14 +5,14 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
-    <section className="py-28 bg-gray-900 text-white">
+    <section className="py-32 bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-5xl font-bold mb-8">
           Anfrage starten – ohne Schnickschnack
         </h2>
         <p className="text-2xl text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed">
-          Rufen Sie an, schreiben Sie uns oder kommen Sie vorbei. Wir beraten Sie ehrlich 
-          und erstellen Ihnen ein maßgeschneidertes Angebot für Ihr Projekt.
+          Rufen Sie uns an, schreiben Sie uns oder kommen Sie vorbei. 
+          Wir beraten Sie ehrlich und erstellen Ihnen ein Angebot, das passt.
         </p>
         
         <div className="mb-16">

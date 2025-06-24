@@ -3,67 +3,63 @@ import React from 'react';
 
 const Reviews: React.FC = () => {
   return (
-    <section className="py-28 bg-gradient-to-br from-green-50 to-green-100">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 bg-yellow-100 px-6 py-3 rounded-full mb-8">
+    <section className="py-32 bg-white">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center space-x-3 bg-yellow-50 px-8 py-4 rounded-full mb-12 border border-yellow-200">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-yellow-500 text-xl">★</span>
+                <span key={i} className="text-yellow-500 text-2xl">★</span>
               ))}
             </div>
-            <span className="text-yellow-800 font-bold text-lg">4,7 / 5</span>
-            <span className="text-yellow-700 text-sm">Google Bewertungen</span>
+            <span className="text-yellow-800 font-bold text-xl">4,7 / 5</span>
+            <span className="text-yellow-700 text-lg">Google Bewertungen</span>
           </div>
           <h2 className="text-5xl font-bold text-gray-900 mb-6">
             Das sagen unsere Kunden
           </h2>
-          <p className="text-xl text-gray-700">
-            Echte Google-Bewertungen – direkt, ehrlich & unbeeinflusst.
+          <p className="text-xl text-gray-600">
+            Echte Google-Bewertungen – direkt, ehrlich & unbeeinflusst
           </p>
         </div>
         
-        {/* Main Review */}
-        <div className="bg-white rounded-3xl p-12 mb-12 border-2 border-green-200 shadow-xl">
+        {/* Main Featured Review */}
+        <div className="bg-gray-50 rounded-3xl p-16 mb-16 border-l-8 border-green-600">
           <div className="flex justify-center mb-8">
             {[...Array(5)].map((_, i) => (
-              <span key={i} className="text-yellow-500 text-3xl">★</span>
+              <span key={i} className="text-yellow-500 text-4xl">★</span>
             ))}
           </div>
-          <blockquote className="text-3xl text-gray-800 text-center italic mb-8 font-light leading-relaxed">
+          <blockquote className="text-4xl md:text-5xl text-gray-800 text-center font-light leading-relaxed mb-12 italic">
             "Gute Arbeit. Pünktlich und zuverlässig."
           </blockquote>
           <div className="text-center">
-            <p className="font-bold text-gray-900 text-2xl">Sabine W.</p>
-            <p className="text-gray-600 text-lg">Google Bewertung</p>
+            <p className="font-bold text-gray-900 text-3xl mb-2">Sabine W.</p>
+            <p className="text-gray-600 text-xl">Google Bewertung</p>
           </div>
         </div>
 
-        {/* Additional Reviews */}
+        {/* Additional Reviews - Minimal */}
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-2xl p-6 border border-green-200 shadow-sm">
+          <div className="text-center p-6">
             <div className="flex justify-center mb-4">
               {[...Array(4)].map((_, i) => (
-                <span key={i} className="text-yellow-500 text-lg">★</span>
+                <span key={i} className="text-yellow-500 text-xl">★</span>
               ))}
-              <span className="text-gray-300 text-lg">★</span>
+              <span className="text-gray-300 text-xl">★</span>
             </div>
-            <div className="text-center">
-              <p className="font-bold text-gray-900">Chris</p>
-              <p className="text-gray-500 text-sm">Google Bewertung</p>
-            </div>
+            <p className="font-bold text-gray-900 text-lg">Chris</p>
+            <p className="text-gray-500">Google Bewertung</p>
           </div>
 
-          <div className="bg-white rounded-2xl p-6 border border-green-200 shadow-sm">
+          <div className="text-center p-6">
             <div className="flex justify-center mb-4">
               {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-yellow-500 text-lg">★</span>
+                <span key={i} className="text-yellow-500 text-xl">★</span>
               ))}
             </div>
-            <div className="text-center">
-              <p className="font-bold text-gray-900">Markus Franzl</p>
-              <p className="text-gray-500 text-sm">Google Bewertung</p>
-            </div>
+            <p className="font-bold text-gray-900 text-lg">Markus Franzl</p>
+            <p className="text-gray-500">Google Bewertung</p>
           </div>
         </div>
       </div>
