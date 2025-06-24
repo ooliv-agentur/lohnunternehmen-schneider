@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BadgeCheck, Helmet, Tractor } from 'lucide-react';
+import { BadgeCheck, Shield, Tractor } from 'lucide-react';
 
 const WhyUs: React.FC = () => {
   return (
@@ -28,7 +28,7 @@ const WhyUs: React.FC = () => {
           
           <div className="text-center group">
             <div className="bg-white p-10 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
-              <Helmet className="h-16 w-16 text-green-600 mx-auto mb-6" />
+              <Shield className="h-16 w-16 text-green-600 mx-auto mb-6" />
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Zertifizierte Fachkräfte</h3>
               <p className="text-gray-700 text-lg leading-relaxed">
                 European Tree Workers und Spezialisten nach höchsten Sicherheitsstandards. 
