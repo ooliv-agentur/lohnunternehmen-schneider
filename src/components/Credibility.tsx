@@ -48,25 +48,28 @@ const Credibility: React.FC = () => {
           </div>
 
           <div className="text-center group">
-            <div className="bg-gray-50 p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-white p-8 rounded-2xl shadow-sm mb-8 group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300">
               <Award className="h-14 w-14 text-green-600 mx-auto mb-6" />
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Zertifiziert & Geprüft</h3>
-              <div className="space-y-4">
-                <div className="bg-white p-3 rounded-lg border border-gray-200">
-                  <div className="flex items-center justify-center mb-2">
-                    <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                  </div>
-                  <p className="text-sm font-semibold text-gray-900 mb-1">DFSZ-zertifiziert</p>
-                  <p className="text-xs text-gray-600">Deutsches Forst-Service-Zertifikat</p>
-                </div>
-                <div className="bg-white p-3 rounded-lg border border-gray-200">
-                  <div className="flex items-center justify-center mb-2">
-                    <div className="w-8 h-8 bg-gray-300 rounded"></div>
-                  </div>
-                  <p className="text-sm font-semibold text-gray-900 mb-1">FLL-zertifiziert</p>
-                  <p className="text-xs text-gray-600">Baumkontrolleur nach FLL-Richtlinien</p>
-                </div>
-              </div>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Zertifiziert nach höchsten Standards</h3>
+              <p className="text-gray-700 text-base leading-relaxed">
+                DFSZ-zertifiziert (Deutsches Forst-Service-Zertifikat) und FLL-zertifizierter Baumkontrolleur – geprüfte Qualität, auf die Sie sich verlassen können.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Certificate badges below the main cards */}
+        <div className="bg-white rounded-2xl p-8 text-center border border-gray-200 mb-16">
+          <div className="flex items-center justify-center space-x-8 text-gray-600">
+            <span className="font-medium text-gray-900">Zertifizierungen:</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-6 h-6 bg-gray-300 rounded"></div>
+              <span className="text-sm font-medium">DFSZ</span>
+            </div>
+            <span className="text-gray-400">·</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-6 h-6 bg-gray-300 rounded"></div>
+              <span className="text-sm font-medium">FLL Baumkontrolleur</span>
             </div>
           </div>
         </div>
