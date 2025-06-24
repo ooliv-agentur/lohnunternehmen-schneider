@@ -1,70 +1,69 @@
 
 import React from 'react';
-import { Star } from 'lucide-react';
 
 const NewReviews: React.FC = () => {
-  const reviews = [
-    {
-      name: "Sabine W.",
-      text: "Gute Arbeit. Pünktlich und zuverlässig.",
-      rating: 5
-    },
-    {
-      name: "Chris",
-      text: "Top Beratung & schneller Rückruf.",
-      rating: 4
-    },
-    {
-      name: "Markus Franzl",
-      text: "Unkompliziert, effizient und sicher.",
-      rating: 5
-    }
-  ];
-
   return (
     <section className="py-24 bg-white">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
             Das sagen unsere Kunden
           </h2>
-          <p className="text-lg text-gray-600">
-            4,7 von 5 – echte Bewertungen
-          </p>
-        </div>
-        
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {reviews.map((review, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className={`h-5 w-5 ${
-                      i < review.rating
-                        ? 'text-yellow-400 fill-current'
-                        : 'text-gray-300'
-                    }`}
-                  />
-                ))}
-              </div>
-              <p className="text-gray-700 mb-4 italic">
-                "{review.text}"
-              </p>
-              <p className="text-gray-900 font-medium">
-                {review.name}
-              </p>
+          <div className="inline-flex items-center space-x-3 bg-yellow-50 px-6 py-3 rounded-full border border-yellow-200">
+            <div className="flex">
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className="text-yellow-500 text-lg">★</span>
+              ))}
             </div>
-          ))}
+            <span className="text-yellow-800 font-bold text-lg">4,7 / 5</span>
+            <span className="text-yellow-700">Google Bewertungen</span>
+          </div>
         </div>
         
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-md transition-all duration-300">
+            <div className="flex justify-center mb-4">
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className="text-yellow-500 text-xl">★</span>
+              ))}
+            </div>
+            <blockquote className="text-lg text-gray-800 mb-4 italic">
+              "Gute Arbeit. Pünktlich und zuverlässig."
+            </blockquote>
+            <p className="font-bold text-gray-900">Sabine W.</p>
+          </div>
+
+          <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-md transition-all duration-300">
+            <div className="flex justify-center mb-4">
+              {[...Array(4)].map((_, i) => (
+                <span key={i} className="text-yellow-500 text-xl">★</span>
+              ))}
+              <span className="text-gray-300 text-xl">★</span>
+            </div>
+            <blockquote className="text-lg text-gray-800 mb-4 italic">
+              "Top Beratung & schneller Rückruf."
+            </blockquote>
+            <p className="font-bold text-gray-900">Chris</p>
+          </div>
+
+          <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-md transition-all duration-300">
+            <div className="flex justify-center mb-4">
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className="text-yellow-500 text-xl">★</span>
+              ))}
+            </div>
+            <blockquote className="text-lg text-gray-800 mb-4 italic">
+              "Unkompliziert, effizient und sicher."
+            </blockquote>
+            <p className="font-bold text-gray-900">Markus Franzl</p>
+          </div>
+        </div>
+
         <div className="text-center">
-          <a 
-            href="#" 
-            className="text-green-600 hover:text-green-700 font-medium"
-          >
-            Weitere Bewertungen ansehen →
-          </a>
+          <button className="text-green-600 hover:text-green-700 font-medium text-lg transition-colors duration-200 inline-flex items-center">
+            Weitere Bewertungen ansehen
+            <span className="ml-2">→</span>
+          </button>
         </div>
       </div>
     </section>
