@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
     <header className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-sm border-b border-green-100">
       <div className="max-w-7xl mx-auto px-2 py-4 flex justify-between items-center">
         <div className="font-bold text-xl text-gray-900 pl-2">
-          Sebastian Schneider Lohnunternehmen
+          Lohnunternehmen Schneider
         </div>
         
         <Button 
