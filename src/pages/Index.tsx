@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
+import Intro from '@/components/Intro';
 import Services from '@/components/Services';
 import WhyUs from '@/components/WhyUs';
 import Reviews from '@/components/Reviews';
@@ -21,6 +22,7 @@ const Index = () => {
       <Navigation isOpen={isMenuOpen} onClose={handleMenuClose} />
       <Header onMenuToggle={handleMenuToggle} />
       <Hero />
+      <Intro />
       <Services />
       <WhyUs />
       <Reviews />

@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-green-50 via-white to-gray-50 overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-gray-50 overflow-hidden">
       {/* Light background with subtle nature-inspired gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent z-10"></div>
       
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             Seit 2004 im Westerwald
           </div>
           
-          {/* Main headline - split into two blocks */}
+          {/* Main headline - simplified and bold */}
           <div className="space-y-8">
             <h1 className="text-6xl md:text-8xl font-bold leading-tight text-gray-900">
               <span className="block text-green-700">Sicher. Zertifiziert.</span>
@@ -31,12 +31,6 @@ const Hero: React.FC = () => {
               Spezialtechnik für Baumarbeiten, Forstpflege & Landwirtschaft
             </p>
           </div>
-          
-          {/* Supporting text */}
-          <p className="text-xl text-gray-600 max-w-2xl leading-relaxed">
-            Ihr Partner für professionelle Baumarbeiten, EPS-Bekämpfung und Spezialmaschinen – 
-            für Kommunen, Landwirte und Forstämter.
-          </p>
           
           {/* CTA Section with proper spacing */}
           <div className="space-y-4 pt-8">
