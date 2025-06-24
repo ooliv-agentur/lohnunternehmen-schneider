@@ -10,28 +10,25 @@ import {
 
 const MachineGallery: React.FC = () => {
   const machineImages = [
-    { id: 1, title: "Holzrückung mit Harvester" },
-    { id: 2, title: "Team bei der Baumfällung" },
-    { id: 3, title: "Moderne Forsttechnik im Einsatz" },
-    { id: 4, title: "Seilklettertechnik-Arbeiten" },
-    { id: 5, title: "Hebebühne bei Baumpflege" },
+    { id: 1, title: "Harvester im Forsteinsatz" },
+    { id: 2, title: "Team bei Seilkletterarbeiten" },
+    { id: 3, title: "Moderne Forsttechnik" },
+    { id: 4, title: "Spezialtechnik Baumfällung" },
+    { id: 5, title: "Hebebühne Baumpflege" },
     { id: 6, title: "EPS-Bekämpfung Equipment" },
-    { id: 7, title: "Landmaschinen im Einsatz" },
-    { id: 8, title: "Spezialfahrzeuge Forstarbeit" },
+    { id: 7, title: "Landmaschinen Einsatz" },
+    { id: 8, title: "Holzrückung Technik" },
   ];
 
   return (
     <section className="py-24 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Unser Maschinenpark im Einsatz
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Maschinenpark & Team
           </h2>
-          <p className="text-lg text-gray-600 mb-2">
-            Moderne Spezialtechnik für jeden Einsatzbereich
-          </p>
-          <p className="text-sm text-gray-500">
-            Echte Einsatzfotos folgen
+          <p className="text-gray-600 mb-2">
+            Hier folgen reale Bilder von Team & Technik im Einsatz
           </p>
         </div>
         
@@ -40,18 +37,17 @@ const MachineGallery: React.FC = () => {
             opts={{
               align: "start",
               loop: false,
-              dragFree: false,
             }}
             className="w-full"
           >
-            <CarouselContent className="-ml-6">
+            <CarouselContent className="-ml-4">
               {machineImages.map((image) => (
-                <CarouselItem key={image.id} className="pl-6 basis-[28.5%]">
-                  <div className="bg-white rounded-xl h-64 flex flex-col items-center justify-center p-6 hover:shadow-md transition-all duration-300 border border-gray-200">
-                    <div className="w-24 h-20 bg-gray-300 rounded-lg mb-6 flex items-center justify-center">
-                      <div className="w-12 h-10 bg-gray-400 rounded"></div>
+                <CarouselItem key={image.id} className="pl-4 basis-[28.5%]">
+                  <div className="bg-white rounded-lg h-48 flex flex-col items-center justify-center p-6 border border-gray-200">
+                    <div className="w-20 h-16 bg-gray-300 rounded mb-4 flex items-center justify-center">
+                      <div className="w-10 h-8 bg-gray-400 rounded"></div>
                     </div>
-                    <span className="text-sm text-gray-700 text-center font-medium leading-tight">
+                    <span className="text-sm text-gray-700 text-center font-medium">
                       {image.title}
                     </span>
                   </div>
@@ -59,11 +55,9 @@ const MachineGallery: React.FC = () => {
               ))}
             </CarouselContent>
             
-            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-green-300 text-gray-600 hover:text-green-600 w-12 h-12 shadow-lg transition-all duration-200" />
-            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-green-300 text-gray-600 hover:text-green-600 w-12 h-12 shadow-lg transition-all duration-200" />
+            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 border-2 border-gray-200 text-gray-600 w-10 h-10" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 border-2 border-gray-200 text-gray-600 w-10 h-10" />
           </Carousel>
-          
-          <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-50 via-gray-50/60 to-transparent pointer-events-none rounded-r-2xl"></div>
         </div>
       </div>
     </section>

@@ -1,105 +1,87 @@
 
 import React from 'react';
-import { TreePine, Shield, Wrench, Tractor, Leaf } from 'lucide-react';
+import { TreePine, Bug, Tractor, Leaf, Shield } from 'lucide-react';
 
 const NewServices: React.FC = () => {
+  const services = [
+    {
+      icon: TreePine,
+      title: "Spezialfällungen",
+      points: [
+        "Seilklettertechnik",
+        "Schwierige Lagen",
+        "Gefahrenfällung"
+      ]
+    },
+    {
+      icon: Bug,
+      title: "EPS-Bekämpfung",
+      points: [
+        "Eichenprozessionsspinner",
+        "Zertifizierte Verfahren",
+        "Sicherheitsstandards"
+      ]
+    },
+    {
+      icon: TreePine,
+      title: "Forstdienste",
+      points: [
+        "Holzrückung",
+        "Lichtraumprofil",
+        "Waldpflege"
+      ]
+    },
+    {
+      icon: Tractor,
+      title: "Landwirtschaft",
+      points: [
+        "Mähwerke",
+        "Ballenpressen",
+        "Ausbringung"
+      ]
+    },
+    {
+      icon: Shield,
+      title: "Artenschutz",
+      points: [
+        "Amphibienschutz",
+        "Brutplattformen",
+        "Wiesenpflege"
+      ]
+    }
+  ];
+
   return (
     <section className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Unsere Einsatzbereiche
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Einsatzbereiche
           </h2>
-          <p className="text-xl text-gray-600">
-            Spezialisiert, zertifiziert und mit modernster Technik
-          </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="group cursor-pointer bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="bg-green-600 p-4 rounded-xl">
-                <TreePine className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">
-                  Spezialfällung & Seilklettertechnik
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <div key={index} className="bg-white p-8 rounded-lg">
+                <div className="mb-6">
+                  <IconComponent className="h-12 w-12 text-green-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  {service.title}
                 </h3>
-                <p className="text-gray-600 text-sm mt-1">
-                  Für schwierige Lagen & große Höhen
-                </p>
+                <ul className="space-y-2">
+                  {service.points.map((point, idx) => (
+                    <li key={idx} className="text-gray-600 flex items-center">
+                      <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </div>
-            <div className="text-green-700 font-medium text-sm">→ Mehr erfahren</div>
-          </div>
-
-          <div className="group cursor-pointer bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="bg-green-600 p-4 rounded-xl">
-                <Shield className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">
-                  EPS-Bekämpfung
-                </h3>
-                <p className="text-gray-600 text-sm mt-1">
-                  Sicher & zertifiziert gegen Eichenprozessionsspinner
-                </p>
-              </div>
-            </div>
-            <div className="text-green-700 font-medium text-sm">→ Mehr erfahren</div>
-          </div>
-
-          <div className="group cursor-pointer bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="bg-green-600 p-4 rounded-xl">
-                <Wrench className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">
-                  Forstdienstleistungen
-                </h3>
-                <p className="text-gray-600 text-sm mt-1">
-                  Holzrückung & Lichtraumprofilschnitt
-                </p>
-              </div>
-            </div>
-            <div className="text-green-700 font-medium text-sm">→ Mehr erfahren</div>
-          </div>
-
-          <div className="group cursor-pointer bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="bg-green-600 p-4 rounded-xl">
-                <Tractor className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">
-                  Landwirtschaftliche Arbeiten
-                </h3>
-                <p className="text-gray-600 text-sm mt-1">
-                  Mähwerke, Ballenpressen & Ausbringung
-                </p>
-              </div>
-            </div>
-            <div className="text-green-700 font-medium text-sm">→ Mehr erfahren</div>
-          </div>
-
-          <div className="group cursor-pointer bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 md:col-span-2 lg:col-span-1">
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="bg-green-600 p-4 rounded-xl">
-                <Leaf className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-green-700 transition-colors">
-                  Natur- & Artenschutz
-                </h3>
-                <p className="text-gray-600 text-sm mt-1">
-                  Wiesenpflege, Amphibienschutz & Blühstreifen
-                </p>
-              </div>
-            </div>
-            <div className="text-green-700 font-medium text-sm">→ Mehr erfahren</div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

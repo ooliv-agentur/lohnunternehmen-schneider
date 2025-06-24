@@ -11,71 +11,47 @@ interface NavigationProps {
 const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
   return (
     <div 
-      className={`fixed inset-0 z-50 bg-white transition-all duration-500 ease-in-out ${
+      className={`fixed inset-0 z-50 bg-white transition-all duration-300 ease-in-out ${
         isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >
-      {/* Close button - fixed position matching burger button */}
       <button 
         onClick={onClose}
-        className="fixed top-4 right-4 p-4 hover:bg-gray-50 rounded-full transition-all duration-300 group z-50"
+        className="fixed top-4 right-4 p-4 hover:bg-gray-100 rounded-full transition-all duration-300 z-50"
       >
-        <X className="h-6 w-6 text-green-700 group-hover:text-green-800 transition-colors" />
+        <X className="h-6 w-6 text-gray-700" />
       </button>
 
-      <div className="min-h-screen flex items-center justify-between px-8 max-w-6xl mx-auto overflow-hidden">
-        {/* Main Navigation */}
+      <div className="min-h-screen flex items-center justify-between px-8 max-w-6xl mx-auto">
         <div className="flex-1">
-          <nav className="space-y-6">
-            <div className="space-y-3">
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
+          <nav className="space-y-8">
+            <div className="space-y-4">
+              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-600 transition-colors cursor-pointer">
                 Startseite
               </div>
               
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
+              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-600 transition-colors cursor-pointer">
                 Über uns
               </div>
               
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
+              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-600 transition-colors cursor-pointer">
+                Einsatzbereiche
+              </div>
+              
+              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-600 transition-colors cursor-pointer">
                 Maschinenpark
               </div>
               
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
-                Einsatzbereiche
-              </div>
-            </div>
-
-            {/* Sub-services */}
-            <div className="ml-6 space-y-2">
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
-                Baumpflege & Fällung
-              </div>
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
-                EPS-Bekämpfung
-              </div>
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
-                Forstdienstleistungen
-              </div>
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
-                Landwirtschaft
-              </div>
-              <div className="text-lg md:text-xl font-light text-gray-700 hover:text-green-700 transition-colors cursor-pointer py-1">
-                Artenschutz
-              </div>
-            </div>
-
-            <div className="pt-6">
-              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer tracking-tight">
+              <div className="text-3xl md:text-4xl font-light text-gray-900 hover:text-green-600 transition-colors cursor-pointer">
                 Kontakt
               </div>
             </div>
           </nav>
         </div>
 
-        {/* Contact Info Block */}
         <div className="flex-1 max-w-md ml-16">
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-gray-50 rounded-lg p-8">
+            <h3 className="text-xl font-semibold text-gray-900 mb-6">
               Direkter Kontakt
             </h3>
             
