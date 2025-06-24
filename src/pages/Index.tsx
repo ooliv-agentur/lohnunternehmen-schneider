@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,61 +7,58 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Full Screen Navigation Overlay */}
+      {/* Modern Fullscreen Navigation Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-white flex">
+        <div className="fixed inset-0 z-50 bg-white flex items-center justify-center">
           {/* Close Button */}
           <button 
             onClick={() => setIsMenuOpen(false)}
-            className="absolute top-8 right-8 p-2 hover:bg-gray-100 rounded-full transition-colors"
+            className="absolute top-8 right-8 p-3 hover:bg-gray-50 rounded-full transition-colors"
           >
-            <X className="h-8 w-8 text-gray-900" />
+            <X className="h-6 w-6 text-gray-900" />
           </button>
 
-          <div className="flex-1 flex">
-            {/* Left Column - Navigation Structure */}
-            <div className="flex-1 flex flex-col justify-center px-16 max-w-2xl">
-              <nav className="space-y-8">
-                <div className="text-5xl font-light text-gray-900 border-b border-gray-200 pb-4">
+          <div className="max-w-4xl mx-auto px-8 text-center">
+            {/* Main Navigation */}
+            <nav className="space-y-12">
+              <div className="text-6xl font-light text-gray-900 mb-16">
+                Navigation
+              </div>
+              
+              <div className="space-y-8">
+                <div className="text-4xl font-light text-gray-900 hover:text-gray-600 transition-colors cursor-pointer">
                   Startseite
                 </div>
                 
                 <div className="space-y-6">
-                  <div className="text-5xl font-light text-gray-900">
+                  <div className="text-4xl font-light text-gray-900 hover:text-gray-600 transition-colors cursor-pointer">
                     Leistungen
                   </div>
-                  <div className="ml-12 space-y-4 text-2xl text-gray-600">
-                    <div>Baumarbeiten & Baumpflege</div>
-                    <div>EPS-Bekämpfung</div>
-                    <div>Forstdienstleistungen</div>
-                    <div>Landwirtschaft</div>
-                    <div>Natur- & Artenschutz</div>
+                  <div className="space-y-3 text-2xl text-gray-600">
+                    <div className="hover:text-gray-900 transition-colors cursor-pointer">Baumarbeiten & Baumpflege</div>
+                    <div className="hover:text-gray-900 transition-colors cursor-pointer">EPS-Bekämpfung</div>
+                    <div className="hover:text-gray-900 transition-colors cursor-pointer">Forstdienstleistungen</div>
+                    <div className="hover:text-gray-900 transition-colors cursor-pointer">Landwirtschaft</div>
+                    <div className="hover:text-gray-900 transition-colors cursor-pointer">Natur- & Artenschutz</div>
                   </div>
                 </div>
                 
-                <div className="text-5xl font-light text-gray-900">
+                <div className="text-4xl font-light text-gray-900 hover:text-gray-600 transition-colors cursor-pointer">
                   Über uns
                 </div>
                 
-                <div className="text-5xl font-light text-gray-900">
+                <div className="text-4xl font-light text-gray-900 hover:text-gray-600 transition-colors cursor-pointer">
                   Kontakt
                 </div>
-              </nav>
-            </div>
-
-            {/* Right Column - Project Context */}
-            <div className="flex-1 flex flex-col justify-center px-16 bg-gray-50">
-              <div className="max-w-lg">
-                <h2 className="text-3xl font-light text-gray-900 mb-8">
-                  Website-Struktur
-                </h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-12">
-                  Diese Seite ist ein strategischer Prototyp im Rahmen eines geplanten Website-Relaunchs. Die hier gezeigte Struktur bildet das Fundament für eine moderne, SEO-optimierte Website mit detaillierten Unterseiten.
-                </p>
-                <p className="text-base text-gray-500 italic">
-                  Weitere Inhalte, Designentwicklung und technische Umsetzung folgen im nächsten Projektschritt.
-                </p>
               </div>
+            </nav>
+
+            {/* Strategic Context */}
+            <div className="mt-20 pt-8 border-t border-gray-200">
+              <p className="text-lg text-gray-500 italic max-w-2xl mx-auto">
+                Diese Website ist ein strategischer Prototyp im Rahmen eines geplanten Website-Relaunchs. 
+                Die hier gezeigte Struktur bildet das Fundament für eine moderne, SEO-optimierte Website mit detaillierten Unterseiten.
+              </p>
             </div>
           </div>
         </div>
@@ -323,7 +319,7 @@ const Index = () => {
                   <div className="w-3 h-3 bg-gray-400 mt-2 flex-shrink-0"></div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Zertifizierte Fachkräfte</h3>
-                    <p className="text-gray-600">Unser Team besteht aus European Tree Workern und anderen zertifizierten Spezialisten, die nach höchsten Sicherheitsstandards arbeiten.</p>
+                    <p className="text-gray-600">Unser Team besteht aus European Tree Workers und anderen zertifizierten Spezialisten, die nach höchsten Sicherheitsstandards arbeiten.</p>
                   </div>
                 </div>
                 
