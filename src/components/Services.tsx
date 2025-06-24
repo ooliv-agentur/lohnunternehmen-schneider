@@ -27,10 +27,16 @@ const Services: React.FC = () => {
               <div className="flex-1">
                 <h3 className="text-3xl font-bold mb-6 text-gray-900">Baumarbeiten & Baumpflege</h3>
                 <p className="text-gray-800 mb-8 text-xl leading-relaxed">
-                  <strong>Sicher. Zertifiziert. Seiltechnik & Spezialmaschinen.</strong><br />
-                  Professionelle Baumfällungen und Kroneneinkürzungen mit modernster Technik und European Tree Worker-Zertifizierung. 
-                  Wir arbeiten dort, wo andere aufhören müssen.
+                  <strong>Sicher. Erfahren. Zertifiziert.</strong><br />
+                  Wir fällen 20 Meter hohe Fichten auch in schwierigem Gelände – mit modernster Technik, Seilklettertechnik und European Tree Worker-Zertifizierung. Ob Problembaum, Kronenpflege oder Gefahrfällung: Wir arbeiten präzise und auf höchstem Sicherheitsniveau.
                 </p>
+                <div className="mb-6">
+                  <ul className="text-gray-700 text-lg space-y-2">
+                    <li>• Spezialtechnik & Seiltechnik</li>
+                    <li>• Gefahrenfällungen & Baumpflege</li>
+                    <li>• Arbeiten in Wohngebieten & Hanglagen</li>
+                  </ul>
+                </div>
                 <div className="flex items-center text-green-700 font-bold text-lg">
                   <span>→ Zur Detailseite</span>
                 </div>
@@ -46,9 +52,16 @@ const Services: React.FC = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">EPS-Bekämpfung</h3>
                 <p className="text-gray-700 mb-6 leading-relaxed text-lg">
-                  <strong>Spezialisierte Beseitigung durch zertifizierte Fachkräfte.</strong><br />
-                  Sicher und umweltschonend – wenn der Eichenprozessionsspinner zum Problem wird.
+                  <strong>Spezialeinsätze gegen den Eichenprozessionsspinner.</strong><br />
+                  Wir beseitigen EPS-Nester fachgerecht, umweltverträglich und sicher – mit ausgebildeten Fachkräften, PSA und Absaugtechnik. Für Kommunen, Schulen und Betriebe im Westerwald und darüber hinaus.
                 </p>
+                <div className="mb-4">
+                  <ul className="text-gray-600 text-base space-y-1">
+                    <li>• Zertifizierte Schädlingsbekämpfung</li>
+                    <li>• Schutz für Menschen, Tiere & Natur</li>
+                    <li>• Einsatzbereit im ganzen Westerwald</li>
+                  </ul>
+                </div>
                 <div className="text-green-700 font-semibold">
                   → Zur Detailseite
                 </div>
@@ -64,9 +77,16 @@ const Services: React.FC = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">Forstdienstleistungen</h3>
                 <p className="text-gray-700 mb-6 leading-relaxed text-lg">
-                  <strong>Holzeinschlag, Rückung und Lichtraumprofile</strong> mit eigenem Maschinenpark. 
-                  Effizient und nachhaltig – vom Kleinwald bis zum Großauftrag.
+                  <strong>Von der Rückung bis zum Lichtraumprofilschnitt.</strong><br />
+                  Wir arbeiten für private Waldbesitzer, Kommunen und Forstämter: effizient, termintreu und mit eigenem Maschinenpark. Vom Holzeinschlag bis zur Waldpflege übernehmen wir alle forstwirtschaftlichen Arbeiten.
                 </p>
+                <div className="mb-4">
+                  <ul className="text-gray-600 text-base space-y-1">
+                    <li>• Rückung & Holztransport</li>
+                    <li>• Einschlag & Sortierung</li>
+                    <li>• Forstpflege & Lichtraumprofil</li>
+                  </ul>
+                </div>
                 <div className="text-green-700 font-semibold">
                   → Zur Detailseite
                 </div>
@@ -81,10 +101,20 @@ const Services: React.FC = () => {
               <Tractor className="h-8 w-8 text-green-600" />
               <h4 className="font-bold text-2xl text-gray-900">Landwirtschaftliche Arbeiten</h4>
             </div>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              <strong>Mäharbeiten, Heuwenden und Ballenpressen</strong> mit professioneller Technik. 
-              Wenn die Zeit drängt, sind wir da.
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              <strong>Verlässlich, wenn's schnell gehen muss.</strong><br />
+              Heuernte, Mäharbeiten, Ballenpressen oder Streuen – wir unterstützen regionale Landwirte mit Technik und Tatkraft. Flexibel einsetzbar, auch kurzfristig.
             </p>
+            <div className="mb-4">
+              <ul className="text-gray-600 text-base space-y-1">
+                <li>• Mähwerke, Schwader & Wender</li>
+                <li>• Rundballenpressen & Schleppe</li>
+                <li>• Gülle- & Düngerausbringung</li>
+              </ul>
+            </div>
+            <div className="text-green-700 font-semibold">
+              → Zur Detailseite
+            </div>
           </div>
           
           <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 border border-gray-200">
@@ -92,10 +122,20 @@ const Services: React.FC = () => {
               <Leaf className="h-8 w-8 text-green-600" />
               <h4 className="font-bold text-2xl text-gray-900">Natur- & Artenschutz</h4>
             </div>
-            <p className="text-gray-700 text-lg leading-relaxed">
-              <strong>Blühstreifen, Nistkästen und ökologische Pflegemaßnahmen</strong> für die Artenvielfalt. 
-              Weil Technik und Natur zusammengehören.
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              <strong>Wenn Technik Natur bewahrt.</strong><br />
+              Wir schaffen Lebensräume: mit Blühstreifen, Nistkästen, Biotoppflege und ökologischer Mahd. Für Artenvielfalt, Biodiversität und echte Nachhaltigkeit.
             </p>
+            <div className="mb-4">
+              <ul className="text-gray-600 text-base space-y-1">
+                <li>• Krötenzäune & Brutplattformen</li>
+                <li>• Wiesenpflege & Mähgutübertragung</li>
+                <li>• Insektenhotels & Amphibienschutz</li>
+              </ul>
+            </div>
+            <div className="text-green-700 font-semibold">
+              → Zur Detailseite
+            </div>
           </div>
         </div>
       </div>
