@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BadgeCheck, Shield, Tractor } from 'lucide-react';
 import {
@@ -18,6 +17,8 @@ const Credibility: React.FC = () => {
     { id: 4, title: "Seilklettertechnik" },
     { id: 5, title: "Hebebühne Arbeiten" },
     { id: 6, title: "Holzrückung mit Harvester" },
+    { id: 7, title: "Baumpflege Arbeiten" },
+    { id: 8, title: "Forstmaschinen im Einsatz" },
   ];
 
   return (
@@ -81,8 +82,8 @@ const Credibility: React.FC = () => {
           </div>
         </div>
 
-        {/* Dynamic image carousel section */}
-        <div className="bg-white rounded-2xl p-12 border border-gray-200">
+        {/* Revised horizontal scroll image gallery section */}
+        <div className="bg-white rounded-2xl p-8 border border-gray-200">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Eindrücke vom Einsatz
@@ -92,31 +93,39 @@ const Credibility: React.FC = () => {
             </p>
           </div>
           
-          <div className="relative px-12">
+          <div className="relative">
             <Carousel
               opts={{
                 align: "start",
-                loop: true,
+                loop: false,
+                dragFree: false,
               }}
               className="w-full"
             >
-              <CarouselContent className="-ml-4">
+              <CarouselContent className="-ml-6">
                 {placeholderImages.map((image) => (
-                  <CarouselItem key={image.id} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                    <div className="bg-gray-100 rounded-lg h-48 flex flex-col items-center justify-center p-4 hover:bg-gray-200 transition-colors">
-                      <div className="w-16 h-16 bg-gray-300 rounded-lg mb-3 flex items-center justify-center">
-                        <div className="w-8 h-6 bg-gray-400 rounded"></div>
+                  <CarouselItem key={image.id} className="pl-6 basis-[28.5%]">
+                    <div className="bg-gray-50 rounded-xl h-56 flex flex-col items-center justify-center p-6 hover:bg-gray-100 transition-colors border border-gray-200 shadow-sm">
+                      <div className="w-20 h-16 bg-gray-300 rounded-lg mb-4 flex items-center justify-center">
+                        <div className="w-10 h-8 bg-gray-400 rounded"></div>
                       </div>
-                      <span className="text-sm text-gray-600 text-center font-medium">
+                      <span className="text-sm text-gray-600 text-center font-medium leading-tight">
                         {image.title}
                       </span>
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
+              
+              {/* Left arrow */}
+              <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-green-300 text-gray-600 hover:text-green-600 w-12 h-12 shadow-lg transition-all duration-200" />
+              
+              {/* Right arrow */}
+              <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-green-300 text-gray-600 hover:text-green-600 w-12 h-12 shadow-lg transition-all duration-200" />
             </Carousel>
+            
+            {/* Subtle fade-out gradient on the right to suggest more content */}
+            <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-white via-white/60 to-transparent pointer-events-none rounded-r-2xl"></div>
           </div>
         </div>
       </div>
