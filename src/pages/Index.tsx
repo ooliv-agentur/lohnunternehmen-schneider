@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
+import WhyUs from '@/components/WhyUs';
 import Reviews from '@/components/Reviews';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
@@ -21,6 +22,7 @@ const Index = () => {
       <Header onMenuToggle={handleMenuToggle} />
       <Hero />
       <Services />
+      <WhyUs />
       <Reviews />
       <About />
       <Contact />

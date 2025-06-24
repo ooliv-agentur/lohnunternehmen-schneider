@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { X, TreePine, Shield, Leaf, Tractor, Phone, ArrowRight, Users, Award } from 'lucide-react';
+import { X, TreePine, Shield, Leaf, Tractor, Phone, ArrowRight, Users, Award, Wrench } from 'lucide-react';
 
 interface NavigationProps {
   isOpen: boolean;
@@ -27,7 +27,7 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
       icon: TreePine
     },
     {
-      title: 'Landwirtschaftliche Unterstützung',
+      title: 'Landwirtschaftliche Arbeiten',
       description: 'Mähwerke, Heuwender, Ballenpressen',
       icon: Tractor
     },
@@ -51,7 +51,6 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
         {/* Left Column - Navigation */}
         <div className="w-3/5 px-16 py-20 bg-gray-50">
           <div className="max-w-xl">
-            {/* Main Navigation */}
             <div className="mb-16">
               <h2 className="text-4xl font-light text-gray-900 mb-2">
                 Navigation
@@ -90,11 +89,11 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
                 </div>
                 
                 <div className="text-2xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer pb-2 border-b border-transparent hover:border-green-200">
-                  Referenzen & Projekte
+                  Maschinenpark & Team
                 </div>
                 
                 <div className="text-2xl font-light text-gray-900 hover:text-green-700 transition-colors cursor-pointer pb-2 border-b border-transparent hover:border-green-200">
-                  Angebot anfordern
+                  Kontakt
                 </div>
               </nav>
             </div>
@@ -109,8 +108,7 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
                 Sebastian Schneider
               </h3>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Professionelle Baum- und Forstarbeiten aus dem Westerwald. 
-                Seit über 20 Jahren im Einsatz für Natur, Landschaft und Sicherheit.
+                Sicher. Flexibel. Spezialisiert auf Baumarbeiten & Technik im Forst – seit 2004 im Westerwald.
               </p>
               
               <div className="space-y-3 text-gray-600">
@@ -119,12 +117,12 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
                   <span>Zertifizierte Fachkräfte</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Tractor className="w-4 h-4 text-green-600" />
+                  <Wrench className="w-4 h-4 text-green-600" />
                   <span>Eigener Maschinenpark</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Users className="w-4 h-4 text-green-600" />
-                  <span>Kostenlose Erstberatung</span>
+                  <span>Kostenlose Vor-Ort-Besichtigung</span>
                 </div>
               </div>
             </div>
